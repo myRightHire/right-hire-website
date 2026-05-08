@@ -112,8 +112,11 @@ function HeroSection() {
             <p className="text-2xl mb-4" style={{ fontFamily: "'Newsreader', serif", color: 'var(--brand-green)' }}>
               The Right Talent. The Right Impact.
             </p>
-            <p className="text-lg text-muted-foreground max-w-xl mb-8 leading-relaxed">
-              Specialized search judgment fused with Meridian (recruiting operating system) and Vector (leadership decision layer). <span className="text-sm font-bold tracking-wider text-muted-foreground whitespace-nowrap">STRATEGY. INSIGHT. RESULTS.</span>
+            <p className="text-lg text-muted-foreground max-w-xl mb-6 leading-relaxed">
+              Specialized search judgment fused with Meridian (recruiting operating system) and Vector (leadership decision layer).
+            </p>
+            <p className="text-sm font-bold tracking-wider text-muted-foreground mb-8">
+              STRATEGY. INSIGHT. RESULTS.
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4 mb-10">
