@@ -1,0 +1,49 @@
+# Right Hire Website — Figma Design Spec
+
+**Goal**: Premium, sophisticated, trustworthy executive search firm site (not generic recruiting).  
+**Tone**: Strategic consulting + enterprise SaaS. Restrained but confident.
+
+## Core Design System
+
+**Colors**
+- Background: #f6f3ee (warm cream)
+- Surface: rgba(255,255,255,0.78) + #ffffff
+- Ink: #132238 (deep navy)
+- Muted: #5c6778
+- Accent Blue: #1d4ed8 → #102a63 (gradient)
+- Gold Accent: #c98a2e
+- Line: rgba(19,34,56,0.12)
+
+**Typography**
+- Headings: Newsreader (serif), 500–700 weight
+- Body: Manrope, 400–700 weight
+- Scale: Use existing clamp() values as reference
+
+**Spacing & Radius**
+- Large radius: 28px
+- Medium: 18px
+- Small: 12px
+- Shadow: 0 18px 45px rgba(17,24,39,0.08)
+
+## Page Structure (Desktop + Mobile)
+
+**Hero Section** (priority)
+- Left: Copy + CTA
+- Right: Large primary card + 3 stacked metric cards
+- Background: Subtle blurred industrial/tech image with strong cream overlay (see reference below)
+
+**Sections to Design** (in order):
+1. Hero
+2. Focus (3 cards)
+3. Problem (4 cards)
+4. Platform (4 cards — numbered)
+5. How it Works (workflow steps)
+6. Why Right Hire (4 cards)
+7. Who This Is For (tags)
+8. FAQ
+9. Contact
+10. Footer
+
+## Assets & References
+
+**Branded UI Mockups (import these into Figma):**

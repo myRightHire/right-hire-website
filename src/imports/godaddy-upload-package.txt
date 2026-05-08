@@ -1,0 +1,380 @@
+RIGHT HIRE - GODADDY UPLOAD PACKAGE
+=====================================
+
+This package contains all the updated files ready for GoDaddy upload.
+
+FILES TO UPLOAD:
+1. index.html (see below)
+2. styles.css (already updated in src/imports/styles.css)
+3. script.js (already in src/imports/script.js)
+4. Logo_no_tagline_white_background_Draft_2.jpg (already in src/imports/)
+
+IMPORTANT UPDATES INCLUDED:
+✓ Your actual Right Hire logo
+✓ Brand colors: Blue #1e5a96, Green #7cb342
+✓ Contact: chris.dempsey@myrighthire.com, 443-255-5856
+✓ Three service pillars (Executive Hiring, Technical Talent, Scalable TA Systems)
+✓ "The Right Talent. The Right Impact." tagline
+✓ "STRATEGY. INSIGHT. RESULTS." supporting tagline
+✓ Green checkmarks throughout
+✓ "Vector: Real-time talent risk & executive decision intelligence"
+✓ Updated contact next step message
+
+=====================================
+index.html - COPY THIS ENTIRE SECTION BELOW
+=====================================
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Right Hire | Executive Search for Advanced Tech and Manufacturing</title>
+    <meta
+      name="description"
+      content="Right Hire is a search firm focused on leadership and executive hiring in advanced technology and manufacturing, powered by Meridian and Vector."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Newsreader:opsz,wght@6..72,500;6..72,700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container nav-shell">
+        <a class="brand" href="#top" aria-label="Right Hire home">
+          <img src="Logo_no_tagline_white_background_Draft_2.jpg" alt="Right Hire" style="height: 3rem; width: auto;" />
+        </a>
+        <nav class="site-nav" aria-label="Primary">
+          <a href="#focus">Focus</a>
+          <a href="#platform">Platform</a>
+          <a href="#how-it-works">How it works</a>
+          <a href="#difference">Why Right Hire</a>
+          <a href="#contact">Contact</a>
+        </nav>
+        <a class="nav-cta" href="mailto:chris.dempsey@myrighthire.com?subject=Right%20Hire%20Demo%20Request">
+          Request Demo
+        </a>
+      </div>
+    </header>
+
+    <main id="top">
+      <section class="hero">
+        <div class="container hero-grid">
+          <div class="hero-copy">
+            <p class="eyebrow">Right Hire + Meridian + Vector</p>
+            <h1>Executive search for advanced technology and manufacturing, powered by systems-level rigor.</h1>
+            <p style="font-family: 'Newsreader', serif; font-size: 1.5rem; color: #7cb342; margin: 1rem 0;">
+              The Right Talent. The Right Impact.
+            </p>
+            <p style="font-size: 0.875rem; font-weight: 700; letter-spacing: 0.1em; color: #5c6778; margin-bottom: 1.5rem;">
+              STRATEGY. INSIGHT. RESULTS.
+            </p>
+            <p class="hero-lead">
+              Specialized search judgment fused with Meridian (recruiting operating system) and Vector (leadership decision layer).
+            </p>
+            <div class="hero-actions">
+              <a class="button button-primary" href="mailto:chris.dempsey@myrighthire.com?subject=Right%20Hire%20Demo%20Request">
+                Request a Demo
+              </a>
+              <a class="button button-secondary" href="#platform">Explore the Platform</a>
+            </div>
+            <ul class="hero-points">
+              <li>Leadership & executive search in complex technical domains</li>
+              <li>Meridian: Structured sourcing, workflow & evidence system</li>
+              <li>Vector: Real-time talent risk & executive decision intelligence</li>
+            </ul>
+          </div>
+          <div class="hero-panel">
+            <div class="hero-card hero-card-primary">
+              <div class="panel-label">What makes Right Hire different</div>
+              <h2>Search-firm judgment with system-level rigor behind it.</h2>
+              <p>
+                We still believe high-stakes hiring is a judgment business. The edge comes from systems that remove ambiguity in definition, sourcing, and decision-making.
+              </p>
+            </div>
+            <div class="hero-card-stack">
+              <div class="hero-card">
+                <div class="metric">01</div>
+                <strong>Specialized Judgment</strong>
+                <span>Focused exclusively on leadership roles where weak hires are catastrophically expensive.</span>
+              </div>
+              <div class="hero-card">
+                <div class="metric">02</div>
+                <strong>Meridian OS</strong>
+                <span>End-to-end recruiting operating system — definition through governed execution.</span>
+              </div>
+              <div class="hero-card">
+                <div class="metric">03</div>
+                <strong>Vector Intelligence</strong>
+                <span>Leadership-facing layer that surfaces talent risk, momentum, and priority.</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="focus" id="focus">
+        <div class="container">
+          <div class="section-heading">
+            <p class="eyebrow">Our Services</p>
+            <h2>Three pillars of talent excellence</h2>
+            <p>
+              We deliver specialized search and scalable talent systems across executive hiring, technical talent, and enterprise TA infrastructure.
+            </p>
+          </div>
+          <div class="focus-grid">
+            <article class="focus-card">
+              <div style="width: 3rem; height: 3rem; border-radius: 50%; background: rgba(124, 179, 66, 0.1); display: flex; align-items: center; justify-content: center; margin-bottom: 1rem;">
+                <span style="font-size: 1.5rem; color: #7cb342;">✓</span>
+              </div>
+              <h3>Executive Hiring</h3>
+              <p>Leadership and executive search where weak definition, sourcing, or evaluation creates expensive downstream mistakes.</p>
+            </article>
+            <article class="focus-card">
+              <div style="width: 3rem; height: 3rem; border-radius: 50%; background: rgba(124, 179, 66, 0.1); display: flex; align-items: center; justify-content: center; margin-bottom: 1rem;">
+                <span style="font-size: 1.5rem; color: #7cb342;">✓</span>
+              </div>
+              <h3>Technical Talent</h3>
+              <p>Specialized hiring in advanced technology and manufacturing where technical depth, talent scarcity, and execution pressure demand sharper search rigor.</p>
+            </article>
+            <article class="focus-card">
+              <div style="width: 3rem; height: 3rem; border-radius: 50%; background: rgba(124, 179, 66, 0.1); display: flex; align-items: center; justify-content: center; margin-bottom: 1rem;">
+                <span style="font-size: 1.5rem; color: #7cb342;">✓</span>
+              </div>
+              <h3>Scalable TA Systems</h3>
+              <p>Enterprise talent acquisition infrastructure powered by Meridian and Vector to bring operational discipline and leadership visibility to recruiting.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="problem">
+        <div class="container">
+          <div class="section-heading">
+            <p class="eyebrow">The problem</p>
+            <h2>Most firms still run high-value search work with fragmented tools, inconsistent judgment, and weak process memory.</h2>
+          </div>
+          <div class="problem-grid">
+            <article class="problem-card">
+              <h3>Searches start fuzzy</h3>
+              <p>Leadership roles are often defined in broad, inconsistent language that creates weak sourcing and weak calibration.</p>
+            </article>
+            <article class="problem-card">
+              <h3>Sourcing lacks memory</h3>
+              <p>Good candidates, false positives, and learned market patterns disappear into spreadsheets, tabs, and recruiter memory.</p>
+            </article>
+            <article class="problem-card">
+              <h3>Evaluation is inconsistent</h3>
+              <p>Candidate review depends too much on individual style instead of structured evidence and repeatable decision logic.</p>
+            </article>
+            <article class="problem-card">
+              <h3>Workflow stalls</h3>
+              <p>Search teams lose time coordinating sourcing, review, outreach, and leadership updates instead of advancing the right people.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="platform" id="platform">
+        <div class="container">
+          <div class="section-heading">
+            <p class="eyebrow">The platform</p>
+            <h2>Right Hire runs search through Meridian and Vector.</h2>
+            <p>
+              The firm is supported by two connected systems. Meridian powers recruiting and sourcing execution.
+              Vector helps leadership see talent risk, opportunity, and decision priority more clearly.
+            </p>
+          </div>
+          <div class="platform-grid">
+            <article class="platform-card">
+              <span class="platform-step">01</span>
+              <h3>Meridian: Search definition and sourcing workflow</h3>
+              <p>Structured search definition, sourcing workflow, candidate review, pipeline movement, outreach preparation, and governed recruiter execution.</p>
+            </article>
+            <article class="platform-card">
+              <span class="platform-step">02</span>
+              <h3>Meridian: Candidate evaluation</h3>
+              <p>Structured candidate screening, evidence-backed evaluation, fit review, and workflow support for moving the right candidates forward.</p>
+            </article>
+            <article class="platform-card">
+              <span class="platform-step">03</span>
+              <h3>Vector: Leadership decision visibility</h3>
+              <p>Executive-facing interpretation of talent risk, opportunity, and what deserves attention now.</p>
+            </article>
+            <article class="platform-card">
+              <span class="platform-step">04</span>
+              <h3>Shared trust layer</h3>
+              <p>Structured evidence, governance awareness, audit visibility, and more disciplined talent decisions across the workflow.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="workflow" id="how-it-works">
+        <div class="container workflow-grid">
+          <div class="workflow-copy">
+            <p class="eyebrow" style="color: #7cb342;">How it works</p>
+            <h2 style="color: white;">Right Hire combines search-firm judgment with a stronger internal operating model.</h2>
+            <p style="color: rgba(255, 255, 255, 0.8);">
+              The goal is simple: define the search clearly, reduce sourcing waste, evaluate candidates more consistently,
+              and give clients a sharper view of who is actually worth time.
+            </p>
+          </div>
+          <div class="workflow-steps">
+            <article class="workflow-step" style="background: rgba(255, 255, 255, 0.1); border: 1px solid rgba(255, 255, 255, 0.2);">
+              <div class="workflow-number" style="background: rgba(124, 179, 66, 0.15); color: #7cb342;">1</div>
+              <div>
+                <h3 style="color: white;">Clarify the mandate</h3>
+                <p style="color: rgba(255, 255, 255, 0.7);">Define what success looks like, where false positives come from, and what evidence should matter most.</p>
+              </div>
+            </article>
+            <article class="workflow-step" style="background: rgba(255, 255, 255, 0.1); border: 1px solid rgba(255, 255, 255, 0.2);">
+              <div class="workflow-number" style="background: rgba(124, 179, 66, 0.15); color: #7cb342;">2</div>
+              <div>
+                <h3 style="color: white;">Run the search with more rigor</h3>
+                <p style="color: rgba(255, 255, 255, 0.7);">Use structured sourcing workflow and better search definition instead of relying on loose recruiter prose and repeated guesswork.</p>
+              </div>
+            </article>
+            <article class="workflow-step" style="background: rgba(255, 255, 255, 0.1); border: 1px solid rgba(255, 255, 255, 0.2);">
+              <div class="workflow-number" style="background: rgba(124, 179, 66, 0.15); color: #7cb342;">3</div>
+              <div>
+                <h3 style="color: white;">Evaluate with evidence</h3>
+                <p style="color: rgba(255, 255, 255, 0.7);">Use structured candidate screening and evidence-backed review instead of inconsistent early-stage judgment.</p>
+              </div>
+            </article>
+            <article class="workflow-step" style="background: rgba(255, 255, 255, 0.1); border: 1px solid rgba(255, 255, 255, 0.2);">
+              <div class="workflow-number" style="background: rgba(124, 179, 66, 0.15); color: #7cb342;">4</div>
+              <div>
+                <h3 style="color: white;">Give leaders clearer visibility</h3>
+                <p style="color: rgba(255, 255, 255, 0.7);">Translate recruiting activity into better decision support around talent risk, opportunity, and search momentum.</p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="difference" id="difference">
+        <div class="container">
+          <div class="section-heading">
+            <p class="eyebrow">Why Right Hire</p>
+            <h2>This is not generic recruiting services and not generic recruiting software.</h2>
+          </div>
+          <div class="difference-grid">
+            <article class="difference-card">
+              <h3>Search-firm judgment</h3>
+              <p>We still believe leadership and executive hiring is a high-judgment business that requires market understanding and human rigor.</p>
+            </article>
+            <article class="difference-card">
+              <h3>Systems behind the search</h3>
+              <p>Meridian and Vector give us a stronger way to define searches, preserve evidence, and maintain operational discipline.</p>
+            </article>
+            <article class="difference-card">
+              <h3>Evidence over impression</h3>
+              <p>Structured evaluations, sourcing signals, and workflow memory create a more defensible view of who is worth time.</p>
+            </article>
+            <article class="difference-card">
+              <h3>Leadership visibility</h3>
+              <p>Vector gives the executive layer a clearer read on talent decisions instead of leaving recruiting truth trapped inside operator workflow.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="proof">
+        <div class="container proof-shell">
+          <div class="proof-copy">
+            <p class="eyebrow">Who this is for</p>
+            <h2>Built for organizations that need stronger search judgment in hard-to-fill, high-consequence hiring.</h2>
+          </div>
+          <div class="proof-tags">
+            <span>Executive and leadership search</span>
+            <span>Advanced technology</span>
+            <span>Advanced manufacturing</span>
+            <span>Technical and technical-adjacent hiring</span>
+            <span>Organizations that need stronger recruiting operating discipline</span>
+            <span>Teams that want better talent decision visibility</span>
+          </div>
+        </div>
+      </section>
+
+      <section class="faq">
+        <div class="container">
+          <div class="section-heading">
+            <p class="eyebrow">FAQ</p>
+            <h2>Questions buyers will ask</h2>
+          </div>
+          <div class="faq-list">
+            <details>
+              <summary>Do you replace live interviews?</summary>
+              <p>No. Right Hire strengthens how a search is defined, sourced, and evaluated so live interview time is spent on the people who actually matter.</p>
+            </details>
+            <details>
+              <summary>Are you a search firm or a software company?</summary>
+              <p>Right Hire is a search firm with a focused operating model. Meridian and Vector are the systems that power how we run search and how we surface talent decisions more clearly.</p>
+            </details>
+            <details>
+              <summary>What is Meridian?</summary>
+              <p>Meridian is the recruiting and sourcing operating system behind Right Hire. It supports search definition, sourcing workflow, candidate evaluation, pipeline movement, and recruiter execution.</p>
+            </details>
+            <details>
+              <summary>What is Vector?</summary>
+              <p>Vector is the leadership decision layer. It helps surface talent risk, opportunity, and what deserves executive attention as searches move forward.</p>
+            </details>
+          </div>
+        </div>
+      </section>
+
+      <section class="contact" id="contact">
+        <div class="container contact-shell">
+          <div class="contact-copy">
+            <p class="eyebrow">Contact</p>
+            <h2>Discuss a leadership or executive search mandate.</h2>
+            <p>
+              We work best with organizations that value judgment and operating discipline in high-consequence hiring.
+            </p>
+          </div>
+          <div class="contact-card">
+            <a class="button button-primary button-full" href="mailto:chris.dempsey@myrighthire.com?subject=Right%20Hire%20Demo%20Request">
+              Request a Demo
+            </a>
+            <div class="contact-lines">
+              <p><strong>Email</strong><br />chris.dempsey@myrighthire.com</p>
+              <p><strong>Phone</strong><br />443-255-5856</p>
+              <p><strong>Next step</strong><br />Please schedule a call to see how Right Hire may help you.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-shell">
+        <div>
+          <strong>Right Hire</strong>
+          <p>Executive search for advanced tech and manufacturing</p>
+        </div>
+        <p>© 2026 Right Hire. All rights reserved.</p>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
+
+=====================================
+END OF index.html
+=====================================
+
+UPLOAD INSTRUCTIONS FOR GODADDY:
+1. Save the HTML above as "index.html"
+2. Upload these 4 files to your GoDaddy root public folder:
+   - index.html (the HTML above)
+   - styles.css (from src/imports/styles.css)
+   - script.js (from src/imports/script.js)
+   - Logo_no_tagline_white_background_Draft_2.jpg (from src/imports/)
+3. Test on desktop and mobile
+4. All email links now go to chris.dempsey@myrighthire.com
