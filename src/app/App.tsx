@@ -1,3 +1,4 @@
+import { useState } from "react";
 import logoImage from "../imports/Logo_no_tagline_white_background_Draft_2.jpg";
 
 export default function App() {
@@ -21,19 +22,31 @@ export default function App() {
 }
 
 function Header() {
+  const [menuOpen, setMenuOpen] = useState(false);
+  const navItems = [
+    { href: "#focus", label: "Focus" },
+    { href: "#platform", label: "Platform" },
+    { href: "#how-it-works", label: "How it works" },
+    { href: "#difference", label: "Why Right Hire" },
+    { href: "#contact", label: "Contact" },
+  ];
+
+  const closeMenu = () => setMenuOpen(false);
+
   return (
     <header className="sticky top-0 z-20 py-4 backdrop-blur-md border-b border-border/60 bg-white">
-      <div className="container mx-auto px-6 max-w-7xl flex items-center justify-between">
-        <a href="#top" aria-label="Right Hire home">
+      <div className="container mx-auto px-6 max-w-7xl">
+        <div className="flex items-center justify-between">
+          <a href="#top" aria-label="Right Hire home" onClick={closeMenu}>
           <img src={logoImage} alt="Right Hire" style={{ height: '120px' }} className="w-auto" />
         </a>
 
         <nav className="hidden md:flex items-center gap-8 text-sm font-semibold" style={{ color: '#1e5a96' }} aria-label="Primary">
-          <a href="#focus" className="hover:opacity-70 transition-opacity">Focus</a>
-          <a href="#platform" className="hover:opacity-70 transition-opacity">Platform</a>
-          <a href="#how-it-works" className="hover:opacity-70 transition-opacity">How it works</a>
-          <a href="#difference" className="hover:opacity-70 transition-opacity">Why Right Hire</a>
-          <a href="#contact" className="hover:opacity-70 transition-opacity">Contact</a>
+          {navItems.map((item) => (
+            <a key={item.href} href={item.href} className="hover:opacity-70 transition-opacity">
+              {item.label}
+            </a>
+          ))}
         </nav>
 
         <a
@@ -43,7 +56,41 @@ function Header() {
           Request Demo
         </a>
 
-        <button className="md:hidden" style={{ color: '#1e5a96' }} aria-label="Menu">☰</button>
+          <button
+            className="md:hidden text-3xl leading-none"
+            style={{ color: "#1e5a96" }}
+            aria-label={menuOpen ? "Close menu" : "Open menu"}
+            aria-expanded={menuOpen}
+            onClick={() => setMenuOpen((open) => !open)}
+            type="button"
+          >
+            {menuOpen ? "×" : "☰"}
+          </button>
+        </div>
+
+        {menuOpen ? (
+          <div className="md:hidden mt-4 rounded-[24px] border border-border bg-white shadow-xl p-4">
+            <nav className="flex flex-col gap-3 text-base font-semibold" style={{ color: "#1e5a96" }} aria-label="Mobile Primary">
+              {navItems.map((item) => (
+                <a
+                  key={item.href}
+                  href={item.href}
+                  className="rounded-xl px-3 py-2 hover:bg-[rgba(30,90,150,0.08)] transition-colors"
+                  onClick={closeMenu}
+                >
+                  {item.label}
+                </a>
+              ))}
+              <a
+                href="mailto:chris.dempsey@myrighthire.com?subject=Right%20Hire%20Demo%20Request"
+                className="mt-2 inline-flex items-center justify-center px-6 py-3 rounded-full font-bold text-sm bg-primary text-primary-foreground shadow-xl"
+                onClick={closeMenu}
+              >
+                Request Demo
+              </a>
+            </nav>
+          </div>
+        ) : null}
       </div>
     </header>
   );
@@ -59,17 +106,14 @@ function HeroSection() {
             <p className="eyebrow">
               Right Hire + Meridian + Vector
             </p>
-            <h1 className="text-5xl md:text-6xl lg:text-7xl leading-none mb-6 max-w-[18ch]">
+            <h1 className="text-[2.7rem] sm:text-5xl md:text-6xl lg:text-7xl leading-none mb-6 max-w-[18ch]">
               Executive search for advanced technology and manufacturing, powered by systems-level rigor.
             </h1>
             <p className="text-2xl mb-4" style={{ fontFamily: "'Newsreader', serif", color: 'var(--brand-green)' }}>
               The Right Talent. The Right Impact.
             </p>
-            <p className="text-sm font-bold tracking-wider mb-6 text-muted-foreground">
-              STRATEGY. INSIGHT. RESULTS.
-            </p>
             <p className="text-lg text-muted-foreground max-w-xl mb-8 leading-relaxed">
-              Specialized search judgment fused with Meridian (recruiting operating system) and Vector (leadership decision layer).
+              Specialized search judgment fused with Meridian (recruiting operating system) and Vector (leadership decision layer). <span className="text-sm font-bold tracking-wider text-muted-foreground whitespace-nowrap">STRATEGY. INSIGHT. RESULTS.</span>
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4 mb-10">
