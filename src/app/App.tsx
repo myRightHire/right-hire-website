@@ -2,6 +2,16 @@ import { useState } from "react";
 import logoImage from "../imports/Logo_no_tagline_white_background_Draft_2.jpg";
 
 export default function App() {
+  const path = typeof window !== "undefined" ? window.location.pathname.replace(/\/+$/, "") || "/" : "/";
+
+  if (path === "/privacy") {
+    return <PolicyPage type="privacy" />;
+  }
+
+  if (path === "/terms") {
+    return <PolicyPage type="terms" />;
+  }
+
   return (
     <div className="min-h-screen" style={{ fontFamily: "'Manrope', sans-serif" }}>
       <Header />
@@ -467,12 +477,116 @@ function Footer() {
   return (
     <footer className="py-12 border-t border-border/60 bg-white/70">
       <div className="container mx-auto px-6 max-w-7xl text-sm text-muted-foreground flex flex-col md:flex-row justify-between items-center gap-4">
-        <div>
+        <div className="text-center md:text-left">
           <strong className="block text-foreground">Right Hire</strong>
           <p>Executive search for advanced tech and manufacturing</p>
         </div>
-        <p>© 2026 Right Hire. All rights reserved.</p>
+        <div className="flex flex-col items-center md:items-end gap-2">
+          <div className="flex items-center gap-4">
+            <a href="/privacy" className="hover:text-primary transition-colors">
+              Privacy
+            </a>
+            <a href="/terms" className="hover:text-primary transition-colors">
+              Terms
+            </a>
+          </div>
+          <p>© 2026 Right Hire. All rights reserved.</p>
+        </div>
       </div>
     </footer>
+  );
+}
+
+function PolicyPage({ type }: { type: "privacy" | "terms" }) {
+  const isPrivacy = type === "privacy";
+  const title = isPrivacy ? "Privacy Statement" : "Terms of Use";
+  const intro = isPrivacy
+    ? "Right Hire respects your privacy. This statement explains, at a high level, what information we collect, how we use it, and how to contact us with questions."
+    : "These terms explain the basic rules for using Right Hire websites, demos, and related materials.";
+
+  return (
+    <div className="min-h-screen bg-[var(--brand-cream)]" style={{ fontFamily: "'Manrope', sans-serif" }}>
+      <Header />
+      <main className="py-20">
+        <div className="container mx-auto px-6 max-w-4xl">
+          <div className="bg-white/90 rounded-[28px] border border-white/60 shadow-2xl p-8 md:p-12">
+            <p className="eyebrow mb-4">{isPrivacy ? "Privacy" : "Terms"}</p>
+            <h1 className="text-4xl md:text-5xl leading-tight mb-6">{title}</h1>
+            <p className="text-lg text-muted-foreground leading-relaxed mb-10">{intro}</p>
+
+            {isPrivacy ? (
+              <div className="space-y-8 text-muted-foreground leading-relaxed">
+                <section>
+                  <h2 className="text-2xl font-semibold text-foreground mb-3">Information we may collect</h2>
+                  <p>
+                    We may collect information you choose to share with us, including your name, email address,
+                    company details, and information related to recruiting or demo inquiries.
+                  </p>
+                </section>
+                <section>
+                  <h2 className="text-2xl font-semibold text-foreground mb-3">How we use information</h2>
+                  <p>
+                    We use information to respond to inquiries, schedule conversations, provide demos, improve our
+                    services, and support recruiting and talent-related workflows.
+                  </p>
+                </section>
+                <section>
+                  <h2 className="text-2xl font-semibold text-foreground mb-3">Sharing and protection</h2>
+                  <p>
+                    We do not sell personal information. We may use trusted service providers to operate our website
+                    and systems, and we take reasonable steps to protect information shared with us.
+                  </p>
+                </section>
+                <section>
+                  <h2 className="text-2xl font-semibold text-foreground mb-3">Contact</h2>
+                  <p>
+                    For privacy questions, contact{" "}
+                    <a href="mailto:c@myrighthire.com" className="text-primary hover:opacity-80 transition-opacity">
+                      c@myrighthire.com
+                    </a>
+                    .
+                  </p>
+                </section>
+              </div>
+            ) : (
+              <div className="space-y-8 text-muted-foreground leading-relaxed">
+                <section>
+                  <h2 className="text-2xl font-semibold text-foreground mb-3">Permitted use</h2>
+                  <p>
+                    You may use this website and related materials for lawful business evaluation, communication, and
+                    informational purposes.
+                  </p>
+                </section>
+                <section>
+                  <h2 className="text-2xl font-semibold text-foreground mb-3">No guarantee</h2>
+                  <p>
+                    Content is provided for general information. Demo materials, recruiting workflows, and product
+                    availability may change over time.
+                  </p>
+                </section>
+                <section>
+                  <h2 className="text-2xl font-semibold text-foreground mb-3">Intellectual property</h2>
+                  <p>
+                    Right Hire, Meridian, Vector, and related content, branding, and materials remain the property of
+                    Right Hire unless otherwise stated.
+                  </p>
+                </section>
+                <section>
+                  <h2 className="text-2xl font-semibold text-foreground mb-3">Contact</h2>
+                  <p>
+                    Questions about these terms can be sent to{" "}
+                    <a href="mailto:c@myrighthire.com" className="text-primary hover:opacity-80 transition-opacity">
+                      c@myrighthire.com
+                    </a>
+                    .
+                  </p>
+                </section>
+              </div>
+            )}
+          </div>
+        </div>
+      </main>
+      <Footer />
+    </div>
   );
 }
