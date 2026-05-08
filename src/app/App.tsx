@@ -50,7 +50,7 @@ function Header() {
         </nav>
 
         <a
-          href="mailto:chris.dempsey@myrighthire.com?subject=Right%20Hire%20Demo%20Request"
+          href="mailto:c@myrighthire.com?subject=Right%20Hire%20Demo%20Request"
           className="hidden md:inline-flex items-center justify-center px-6 py-3 rounded-full font-bold text-sm bg-primary text-primary-foreground hover:-translate-y-0.5 transition-all shadow-xl"
         >
           Request Demo
@@ -82,7 +82,7 @@ function Header() {
                 </a>
               ))}
               <a
-                href="mailto:chris.dempsey@myrighthire.com?subject=Right%20Hire%20Demo%20Request"
+                href="mailto:c@myrighthire.com?subject=Right%20Hire%20Demo%20Request"
                 className="mt-2 inline-flex items-center justify-center px-6 py-3 rounded-full font-bold text-sm bg-primary text-primary-foreground shadow-xl"
                 onClick={closeMenu}
               >
@@ -121,7 +121,7 @@ function HeroSection() {
 
             <div className="flex flex-col sm:flex-row gap-4 mb-10">
               <a
-                href="mailto:chris.dempsey@myrighthire.com?subject=Right%20Hire%20Demo%20Request"
+                href="mailto:c@myrighthire.com?subject=Right%20Hire%20Demo%20Request"
                 className="inline-flex items-center justify-center px-8 py-4 rounded-full font-bold bg-primary text-primary-foreground hover:-translate-y-0.5 transition-all shadow-xl"
               >
                 Request a Demo
@@ -437,7 +437,7 @@ function ContactSection() {
           </div>
           <div className="bg-white rounded-[28px] p-8 border border-border shadow-2xl w-full max-w-md">
             <a
-              href="mailto:chris.dempsey@myrighthire.com?subject=Right%20Hire%20Demo%20Request"
+              href="mailto:c@myrighthire.com?subject=Right%20Hire%20Demo%20Request"
               className="block w-full text-center py-4 rounded-full font-bold bg-primary text-white mb-6 hover:-translate-y-0.5 transition-all shadow-lg"
             >
               Request a Demo
@@ -445,7 +445,7 @@ function ContactSection() {
             <div className="space-y-4 text-sm">
               <p className="text-muted-foreground">
                 <strong className="block text-foreground mb-1">Email</strong>
-                chris.dempsey@myrighthire.com
+                c@myrighthire.com
               </p>
               <p className="text-muted-foreground">
                 <strong className="block text-foreground mb-1">Phone</strong>
