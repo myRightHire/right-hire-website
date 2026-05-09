@@ -24,8 +24,8 @@ const steps = [
 export default function WorkflowSection() {
   return (
     <section className="workflow" id="how-it-works">
-      <div className="container workflow-grid">
-        <div className="workflow-copy">
+      <div className="container">
+        <div className="section-heading workflow-copy">
           <p className="eyebrow">Our Process</p>
           <h2>A sharper way to run executive search.</h2>
         </div>

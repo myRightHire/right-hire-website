@@ -3,7 +3,12 @@ import heroLatticeImage from "../assets/SCc3a.jpg";
 export default function Hero() {
   return (
     <section className="hero" id="top">
-      <div className="container hero-grid">
+      <div className="container hero-shell">
+        <div
+          className="hero-lattice-background"
+          aria-hidden="true"
+          style={{ backgroundImage: `url(${heroLatticeImage})` }}
+        />
         <div className="hero-copy">
           <p className="eyebrow">Executive Search, Sharpened by Systems</p>
           <h1>Leadership hiring in advanced tech &amp; manufacturing.</h1>
@@ -23,14 +28,6 @@ export default function Hero() {
               See the Platform
             </a>
           </div>
-        </div>
-
-        <div className="hero-visual">
-          <img
-            src={heroLatticeImage}
-            alt="Precision Talent Lattice"
-            className="hero-lattice"
-          />
         </div>
       </div>
     </section>

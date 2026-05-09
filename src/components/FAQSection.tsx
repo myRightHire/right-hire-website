@@ -27,7 +27,7 @@ export default function FAQSection() {
       <div className="container">
         <div className="section-heading">
           <p className="eyebrow">FAQ</p>
-          <h2>Questions buyers will ask</h2>
+          <h2>Common Questions</h2>
         </div>
 
         <div className="faq-list">

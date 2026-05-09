@@ -4,7 +4,7 @@ import logoImage from "../imports/Logo_no_tagline_white_background_Draft_2.jpg";
 const navItems = [
   { href: "#focus", label: "Focus" },
   { href: "#platform", label: "Platform" },
-  { href: "#how-it-works", label: "How it works" },
+  { href: "#how-it-works", label: "How It Works" },
   { href: "#difference", label: "Why Right Hire" },
   { href: "#contact", label: "Contact" },
 ];
@@ -33,7 +33,7 @@ export default function Header() {
           className="nav-cta button-primary"
           href="mailto:c@myrighthire.com?subject=Right%20Hire%20Demo%20Request"
         >
-          Request Demo
+          Request Brief
         </a>
 
         <button
@@ -61,7 +61,7 @@ export default function Header() {
                 href="mailto:c@myrighthire.com?subject=Right%20Hire%20Demo%20Request"
                 onClick={closeMenu}
               >
-                Request Demo
+                Request Brief
               </a>
             </nav>
           </div>
