@@ -1,42 +1,43 @@
-const services = [
-  {
-    title: "Executive Hiring",
-    desc: "Leadership and executive search where weak definition, sourcing, or evaluation creates expensive downstream mistakes.",
-  },
-  {
-    title: "Technical Talent",
-    desc: "Specialized hiring in advanced technology and manufacturing where technical depth, talent scarcity, and execution pressure demand sharper search rigor.",
-  },
-  {
-    title: "Scalable TA Systems",
-    desc: "Enterprise talent acquisition infrastructure powered by Meridian and Vector to bring operational discipline and leadership visibility to recruiting.",
-  },
-];
-
 export default function FocusSection() {
   return (
-    <section id="focus">
+    <section className="focus" id="focus">
       <div className="container">
         <div className="section-heading">
-          <p className="eyebrow">Our Services</p>
-          <h2>Three pillars of talent excellence</h2>
-          <p>
-            We deliver specialized search and scalable talent systems across
-            executive hiring, technical talent, and enterprise TA
-            infrastructure.
-          </p>
+          <p className="eyebrow">Search Focus</p>
+          <h2>Built for high-consequence leadership and executive roles.</h2>
+          <p>We focus where weak search judgment is most expensive.</p>
         </div>
-
         <div className="focus-grid">
-          {services.map((service) => (
-            <article key={service.title} className="focus-card">
-              <div className="service-icon" aria-hidden="true">
-                ✓
-              </div>
-              <h3>{service.title}</h3>
-              <p>{service.desc}</p>
-            </article>
-          ))}
+          <div className="focus-card">
+            <div className="service-icon" aria-hidden="true">
+              👔
+            </div>
+            <h3>Leadership &amp; Executive Search</h3>
+            <p>
+              Critical hires where clarity, precision, and cultural fit
+              determine long-term success.
+            </p>
+          </div>
+          <div className="focus-card">
+            <div className="service-icon" aria-hidden="true">
+              ⚡
+            </div>
+            <h3>Advanced Technology</h3>
+            <p>
+              Complex, fast-evolving environments where technical depth and
+              talent scarcity demand sharper execution.
+            </p>
+          </div>
+          <div className="focus-card">
+            <div className="service-icon" aria-hidden="true">
+              🏭
+            </div>
+            <h3>Advanced Manufacturing</h3>
+            <p>
+              Operational leadership roles where domain context, execution
+              strength, and reliability matter most.
+            </p>
+          </div>
         </div>
       </div>
     </section>

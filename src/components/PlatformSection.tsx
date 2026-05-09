@@ -1,49 +1,33 @@
-const platformItems = [
-  {
-    num: "01",
-    title: "Meridian: Search definition and sourcing workflow",
-    desc: "Structured search definition, sourcing workflow, candidate review, pipeline movement, outreach preparation, and governed recruiter execution.",
-  },
-  {
-    num: "02",
-    title: "Meridian: Candidate evaluation",
-    desc: "Structured candidate screening, evidence-backed evaluation, fit review, and workflow support for moving the right candidates forward.",
-  },
-  {
-    num: "03",
-    title: "Vector: Leadership decision visibility",
-    desc: "Executive-facing interpretation of talent risk, opportunity, and what deserves attention now.",
-  },
-  {
-    num: "04",
-    title: "Shared trust layer",
-    desc: "Structured evidence, governance awareness, audit visibility, and more disciplined talent decisions across the workflow.",
-  },
-];
-
 export default function PlatformSection() {
   return (
-    <section id="platform">
+    <section className="platform" id="platform">
       <div className="container">
         <div className="section-heading">
           <p className="eyebrow">The Platform</p>
-          <h2>Right Hire runs search through Meridian and Vector.</h2>
-          <p>
-            The firm is supported by two connected systems. Meridian powers
-            recruiting and sourcing execution. Vector helps leadership see
-            talent risk, opportunity, and decision priority more clearly.
-          </p>
+          <h2>Right Hire runs every search through Meridian and Vector.</h2>
         </div>
-
-        <div className="platform-grid">
-          {platformItems.map((item) => (
-            <article key={item.num} className="platform-card">
-              <span className="platform-num">{item.num}</span>
-              <h3>{item.title}</h3>
-              <p>{item.desc}</p>
-            </article>
-          ))}
+        <div className="platform-grid platform-grid-two">
+          <div className="platform-card meridian">
+            <span className="platform-label platform-label-meridian">Meridian</span>
+            <h3>Recruiting &amp; Sourcing Operating System</h3>
+            <p>
+              Structured search definition, rigorous sourcing workflow,
+              evidence-backed evaluation, and governed execution.
+            </p>
+          </div>
+          <div className="platform-card vector">
+            <span className="platform-label platform-label-vector">Vector</span>
+            <h3>Executive Intelligence Layer</h3>
+            <p>
+              Turns recruiting activity into clear talent risk, opportunity, and
+              decision visibility for leadership.
+            </p>
+          </div>
         </div>
+        <p className="platform-note">
+          Together they create a defensible, repeatable advantage in
+          high-stakes hiring.
+        </p>
       </div>
     </section>
   );

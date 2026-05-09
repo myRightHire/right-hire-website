@@ -158,14 +158,8 @@ img {
   font-family: "Newsreader", serif;
   font-size: clamp(3.4rem, 7vw, 5.6rem);
   line-height: 1.05;
+  margin-top: 0;
   margin-bottom: 1.6rem;
-}
-
-.hero-tagline {
-  font-family: "Newsreader", serif;
-  font-size: 2rem;
-  color: var(--green);
-  margin-bottom: 1.5rem;
 }
 
 .hero-lead {
@@ -175,74 +169,12 @@ img {
   margin-bottom: 2.8rem;
 }
 
-.hero-kicker {
-  margin-bottom: 2.8rem;
-  font-size: 0.98rem;
-  font-weight: 800;
-  letter-spacing: 0.08em;
-  text-transform: uppercase;
-  color: var(--muted);
-}
-
 .hero-actions {
   display: flex;
   flex-wrap: wrap;
   gap: 1rem;
-  margin-bottom: 2.2rem;
 }
 
-.hero-bullets {
-  display: grid;
-  gap: 1rem;
-  padding: 0;
-  margin: 0;
-  list-style: none;
-}
-
-.hero-bullets li {
-  display: flex;
-  align-items: flex-start;
-  gap: 0.8rem;
-  color: var(--muted);
-}
-
-.hero-bullets li span:first-child {
-  color: var(--green);
-  font-size: 1.2rem;
-  font-weight: 800;
-  line-height: 1.1;
-}
-
-.hero-side {
-  display: flex;
-  flex-direction: column;
-  gap: 1.6rem;
-}
-
-.hero-note {
-  background: linear-gradient(180deg, rgba(255, 255, 255, 0.96), rgba(246, 248, 255, 0.96));
-  border-radius: var(--radius-lg);
-  border: 1px solid rgba(255, 255, 255, 0.7);
-  box-shadow: var(--shadow);
-  padding: 2.25rem;
-}
-
-.hero-note-eyebrow {
-  margin-bottom: 0.85rem;
-  font-size: 1rem;
-  font-weight: 800;
-  color: var(--blue);
-}
-
-.hero-note h2 {
-  font-family: "Newsreader", serif;
-  font-size: clamp(2rem, 3.1vw, 3rem);
-  line-height: 1.08;
-  margin-bottom: 1rem;
-}
-
-.hero-note p,
-.hero-metric-card p,
 .focus-card p,
 .problem-card p,
 .platform-card p,
@@ -256,38 +188,21 @@ img {
   color: var(--muted);
 }
 
-.hero-metrics {
-  display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
-  gap: 1.25rem;
-}
-
-.hero-metric-card {
+.hero-visual {
   background: var(--surface);
-  border: 1px solid var(--line);
-  border-radius: 28px;
-  padding: 1.6rem;
+  border-radius: var(--radius-lg);
+  height: 560px;
   box-shadow: var(--shadow);
-  transition: all 0.4s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
 }
 
-.hero-metric-card:hover {
-  transform: translateY(-12px);
-  box-shadow: 0 35px 70px rgba(17, 24, 39, 0.14);
-}
-
-.hero-metric-num,
-.platform-num {
-  font-size: 2.1rem;
-  line-height: 1;
-  font-weight: 800;
-  color: var(--blue);
-}
-
-.hero-metric-card h3 {
-  font-family: "Newsreader", serif;
-  margin: 1rem 0 0.4rem;
-  font-size: 1.55rem;
+.hero-lattice {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 /* SECTIONS */
@@ -333,6 +248,8 @@ h2 {
 .focus-card:hover, .problem-card:hover, .platform-card:hover, .difference-card:hover {
   transform: translateY(-12px);
   box-shadow: 0 35px 70px rgba(17, 24, 39, 0.14);
+  border-color: var(--green);
+  box-shadow: 0 35px 70px rgba(124, 179, 66, 0.15);
 }
 
 .focus-card h3, .problem-card h3, .platform-card h3, .difference-card h3, .workflow-step h3, .contact-meta strong {
@@ -355,7 +272,6 @@ h2 {
 
 .platform-label {
   display: inline-block;
-  background: var(--blue);
   color: white;
   font-size: 0.82rem;
   font-weight: 700;
@@ -364,11 +280,41 @@ h2 {
   margin-bottom: 1.25rem;
 }
 
+.platform-grid-two {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.platform-card.meridian {
+  border-top: 5px solid var(--green);
+}
+
+.platform-card.vector {
+  border-top: 5px solid var(--gold);
+}
+
+.platform-label-meridian {
+  background: var(--green);
+}
+
+.platform-label-vector {
+  background: var(--gold);
+}
+
+.platform-note {
+  margin-top: 1.5rem;
+  color: var(--muted);
+  font-size: 1rem;
+}
+
 /* Workflow */
 .workflow-grid {
   display: grid;
   grid-template-columns: 1fr 1.15fr;
   gap: 6rem;
+}
+
+.workflow {
+  background: linear-gradient(180deg, rgba(255,255,255,0.15) 0%, rgba(255,255,255,0.02) 100%);
 }
 
 .workflow-step {
@@ -382,8 +328,9 @@ h2 {
 
 .workflow-number {
   width: 58px; height: 58px;
-  background: rgba(30, 58, 138, 0.1);
-  color: var(--blue);
+  background: rgba(124, 179, 66, 0.15);
+  color: var(--green);
+  border: 2px solid var(--green);
   border-radius: 50%;
   display: grid;
   place-items: center;
@@ -550,21 +497,13 @@ h2 {
     gap: 4rem;
   }
 
-  .hero-note {
-    padding: 1.8rem;
-  }
-
-  .hero-metrics {
-    grid-template-columns: 1fr;
-  }
-
   .contact-layout {
     gap: 2rem;
   }
 }
 
 @media (max-width: 860px) {
-  .hero-grid, .workflow-grid { grid-template-columns: 1fr; }
+  .hero-grid, .workflow-grid, .platform-grid-two { grid-template-columns: 1fr; }
   .site-nav, .nav-cta { display: none; }
   .mobile-menu-btn { display: block; }
   section { padding: 5rem 0; scroll-margin-top: 90px; }
