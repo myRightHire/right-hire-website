@@ -1,4 +1,4 @@
-import heroLatticeImage from "../assets/SCc3a.jpg";
+import heroLatticeImage from "../assets/Vwi3G.jpg";
 
 export default function Hero() {
   return (
@@ -11,7 +11,7 @@ export default function Hero() {
         />
         <div className="hero-copy">
           <p className="eyebrow">Executive Search, Sharpened by Systems</p>
-          <h1>Leadership hiring in advanced tech &amp; manufacturing.</h1>
+          <h1>Leadership hiring in advanced tech &amp; manufacturing</h1>
           <p className="hero-lead">
             Powered by Meridian + Vector — our proprietary operating system that
             brings search-firm judgment and systems-level rigor to every

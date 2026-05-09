@@ -164,7 +164,7 @@ section {
   top: 0;
   z-index: 100;
   padding: 1.55rem 0;
-  background: rgba(252, 250, 247, 0.96);
+  background: rgba(255, 255, 255, 0.97);
   border-bottom: 1px solid rgba(42, 34, 25, 0.07);
   backdrop-filter: blur(16px);
 }
@@ -285,8 +285,8 @@ section {
   inset: -2rem -8rem -4rem 28%;
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: 78% 74%;
-  opacity: 0.95;
+  background-position: 72% 52%;
+  opacity: 0.88;
   mask-image: linear-gradient(90deg, transparent 0%, rgba(0, 0, 0, 0.06) 20%, rgba(0, 0, 0, 0.9) 47%, rgba(0, 0, 0, 1) 100%);
   -webkit-mask-image: linear-gradient(90deg, transparent 0%, rgba(0, 0, 0, 0.06) 20%, rgba(0, 0, 0, 0.9) 47%, rgba(0, 0, 0, 1) 100%);
   pointer-events: none;
@@ -453,14 +453,17 @@ section {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  width: 5rem;
-  height: 5rem;
+  width: 7.5rem;
+  height: 7.5rem;
   border-radius: 50%;
   color: #fff;
   font-family: "Newsreader", serif;
-  font-size: 2rem;
+  font-size: 1.4rem;
   font-weight: 700;
   margin-bottom: 1.5rem;
+  line-height: 1;
+  text-align: center;
+  padding: 0.5rem;
 }
 
 .platform-label-meridian {
@@ -481,7 +484,7 @@ section {
 /* Workflow */
 .workflow {
   color: #fff;
-  background: linear-gradient(180deg, #8d9cb2 0%, #6f829d 45%, #5d7393 100%);
+  background: linear-gradient(180deg, #8a99b0 0%, #6c819e 42%, #577091 100%);
 }
 
 .workflow .workflow-copy h2,
@@ -518,15 +521,22 @@ section {
   gap: 1.7rem;
   padding: 2rem;
   border-radius: var(--radius-md);
-  background: rgba(255, 255, 255, 0.06);
-  border: 1px solid rgba(255, 255, 255, 0.24);
-  backdrop-filter: blur(8px);
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.32);
+  box-shadow: 0 14px 28px rgba(40, 56, 84, 0.12);
+  backdrop-filter: blur(10px);
 }
 
 .workflow-step h3 {
   font-size: 1.3rem;
   line-height: 1.14;
   margin-bottom: 1rem;
+  color: #ffffff;
+  font-weight: 700;
+}
+
+.workflow-step p {
+  color: rgba(255, 255, 255, 0.88);
 }
 
 .workflow-number {
@@ -805,9 +815,9 @@ section {
 
   .hero-lattice-background {
     inset: 11rem -7rem -1rem 28%;
-    background-position: 78% 78%;
+    background-position: 70% 76%;
     background-size: 170%;
-    opacity: 0.72;
+    opacity: 0.76;
   }
 
   .hero-shell::after {

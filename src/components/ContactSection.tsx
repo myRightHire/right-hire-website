@@ -26,10 +26,6 @@ export default function ContactSection() {
               <span>c@myrighthire.com</span>
             </div>
             <div>
-              <strong>Phone</strong>
-              <span>443-255-5856</span>
-            </div>
-            <div>
               <strong>Next step</strong>
               <span>Please schedule a call to see how Right Hire may help you.</span>
             </div>
