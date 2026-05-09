@@ -1,10 +1,11 @@
 import { useState } from "react";
+import logoImage from "../imports/Logo_no_tagline_white_background_Draft_2.jpg";
 
 const navItems = [
   { href: "#focus", label: "Focus" },
   { href: "#platform", label: "Platform" },
-  { href: "#how-it-works", label: "Process" },
-  { href: "#difference", label: "Difference" },
+  { href: "#how-it-works", label: "How it works" },
+  { href: "#difference", label: "Why Right Hire" },
   { href: "#contact", label: "Contact" },
 ];
 
@@ -17,8 +18,7 @@ export default function Header() {
     <header className="site-header">
       <div className="container nav-shell">
         <a className="brand" href="#top" onClick={closeMenu} aria-label="Right Hire home">
-          <span className="brand-monogram">RH</span>
-          <span className="brand-wordmark">Right Hire</span>
+          <img className="brand-logo" src={logoImage} alt="Right Hire" />
         </a>
 
         <nav className="site-nav" aria-label="Primary">

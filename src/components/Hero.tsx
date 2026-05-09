@@ -1,92 +1,85 @@
+const heroCards = [
+  {
+    num: "01",
+    title: "Specialized Judgment",
+    desc: "Focused exclusively on leadership roles where weak hires are catastrophically expensive.",
+  },
+  {
+    num: "02",
+    title: "Meridian OS",
+    desc: "End-to-end recruiting operating system — definition through governed execution.",
+  },
+  {
+    num: "03",
+    title: "Vector Intelligence",
+    desc: "Leadership-facing layer that surfaces talent risk, momentum, and priority.",
+  },
+];
+
 const heroBullets = [
-  "Executive search expertise for high-consequence leadership hiring",
-  "Meridian and Vector add systems-level rigor behind every mandate",
-  "Built for advanced technology and manufacturing organizations",
+  "Leadership & executive search in complex technical domains",
+  "Meridian: Structured sourcing, workflow & evidence system",
+  "Vector: Real-time talent risk & executive decision intelligence",
 ];
 
 export default function Hero() {
   return (
     <section className="hero" id="top">
-      <div className="container">
-        <div className="hero-shell">
-          <div className="hero-grid">
-            <div className="hero-copy">
-              <p className="eyebrow hero-eyebrow">Right Hire + Meridian + Vector</p>
-              <h1>Right Hire</h1>
-              <p className="hero-subtitle">Executive Search &amp; Selection</p>
-              <p className="hero-lead">
-                High-judgment search, strengthened by Meridian and Vector, for
-                organizations that need stronger signal, stronger calibration,
-                and stronger talent decisions.
-              </p>
-              <p className="hero-kicker">The Right Talent. The Right Impact.</p>
+      <div className="container hero-grid">
+        <div className="hero-copy">
+          <p className="eyebrow">Right Hire + Meridian + Vector</p>
+          <h1>
+            Executive search for advanced technology and manufacturing, powered
+            by systems-level rigor.
+          </h1>
+          <p className="hero-tagline">The Right Talent. The Right Impact.</p>
+          <p className="hero-lead">
+            Specialized search judgment fused with Meridian (recruiting
+            operating system) and Vector (leadership decision layer).
+          </p>
+          <p className="hero-kicker">STRATEGY. INSIGHT. RESULTS.</p>
 
-              <div className="hero-actions">
-                <a
-                  className="button button-primary"
-                  href="mailto:c@myrighthire.com?subject=Right%20Hire%20Demo%20Request"
-                >
-                  Request a Demo
-                </a>
-                <a className="button button-secondary hero-secondary" href="#focus">
-                  Explore the Framework
-                </a>
-              </div>
+          <div className="hero-actions">
+            <a
+              className="button button-primary"
+              href="mailto:c@myrighthire.com?subject=Right%20Hire%20Demo%20Request"
+            >
+              Request a Demo
+            </a>
+            <a className="button button-secondary" href="#platform">
+              Explore the Platform
+            </a>
+          </div>
 
-              <ul className="hero-bullets">
-                {heroBullets.map((item) => (
-                  <li key={item}>
-                    <span aria-hidden="true">•</span>
-                    <span>{item}</span>
-                  </li>
-                ))}
-              </ul>
-            </div>
+          <ul className="hero-bullets">
+            {heroBullets.map((item) => (
+              <li key={item}>
+                <span aria-hidden="true">✓</span>
+                <span>{item}</span>
+              </li>
+            ))}
+          </ul>
+        </div>
 
-            <div className="hero-visual-wrap" aria-hidden="true">
-              <svg
-                className="hero-lattice"
-                viewBox="0 0 700 620"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <defs>
-                  <radialGradient
-                    id="heroGlow"
-                    cx="0"
-                    cy="0"
-                    r="1"
-                    gradientUnits="userSpaceOnUse"
-                    gradientTransform="translate(358 282) rotate(90) scale(258 286)"
-                  >
-                    <stop stopColor="rgba(255,249,239,0.95)" />
-                    <stop offset="1" stopColor="rgba(255,249,239,0)" />
-                  </radialGradient>
-                </defs>
+        <div className="hero-side">
+          <div className="hero-note">
+            <p className="hero-note-eyebrow">What makes Right Hire different</p>
+            <h2>Search-firm judgment with system-level rigor behind it.</h2>
+            <p>
+              We still believe high-stakes hiring is a judgment business. The
+              edge comes from systems that remove ambiguity in definition,
+              sourcing, and decision-making.
+            </p>
+          </div>
 
-                <circle cx="370" cy="285" r="244" fill="url(#heroGlow)" />
-                <g stroke="rgba(49,34,22,0.38)" strokeWidth="1.15">
-                  {Array.from({ length: 24 }).map((_, i) => {
-                    const offset = i * 18;
-                    return (
-                      <path
-                        key={`mesh-a-${offset}`}
-                        d={`M ${168 + offset} 38 C ${472 + offset * 0.16} 132, ${461 - offset * 0.85} 454, ${186 + offset * 0.22} 580`}
-                      />
-                    );
-                  })}
-                  {Array.from({ length: 23 }).map((_, i) => {
-                    const offset = i * 18;
-                    return (
-                      <path
-                        key={`mesh-b-${offset}`}
-                        d={`M 644 ${130 + offset} C 518 ${98 + offset * 0.08}, 245 ${160 - offset * 0.48}, 92 ${430 - offset * 0.25}`}
-                      />
-                    );
-                  })}
-                </g>
-              </svg>
-            </div>
+          <div className="hero-metrics">
+            {heroCards.map((card) => (
+              <article key={card.num} className="hero-metric-card">
+                <div className="hero-metric-num">{card.num}</div>
+                <h3>{card.title}</h3>
+                <p>{card.desc}</p>
+              </article>
+            ))}
           </div>
         </div>
       </div>
