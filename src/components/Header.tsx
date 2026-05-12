@@ -1,5 +1,5 @@
 import { useState } from "react";
-import logoImage from "../imports/Logo_no_tagline_white_background_Draft_2.jpg";
+import logoImage from "../imports/right-hire-logo-transparent.png";
 
 const navItems = [
   { href: "#focus", label: "Focus" },

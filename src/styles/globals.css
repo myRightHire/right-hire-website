@@ -179,16 +179,15 @@ section {
 .brand {
   display: inline-flex;
   align-items: center;
-  justify-content: center;
-  width: 11.5rem;
-  height: 7.75rem;
-  background: #fff;
+  justify-content: flex-start;
+  flex: 0 0 20rem;
+  width: 20rem;
   text-decoration: none;
 }
 
 .brand-logo {
-  width: auto;
-  height: 5rem;
+  width: 100%;
+  height: auto;
 }
 
 .site-nav {
@@ -797,12 +796,13 @@ section {
   }
 
   .brand {
-    width: 8.75rem;
-    height: 6.2rem;
+    width: 8rem;
+    height: 6.8rem;
   }
 
   .brand-logo {
-    height: 4rem;
+    width: 6.6rem;
+    height: 6.6rem;
   }
 
   .hero {
