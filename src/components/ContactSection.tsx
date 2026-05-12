@@ -4,7 +4,7 @@ export default function ContactSection() {
       <div className="container contact-section-shell">
         <div className="section-heading contact-heading">
           <p className="eyebrow">Start a Conversation</p>
-          <h2>Ready to discuss a leadership or executive search mandate?</h2>
+          <h2>Ready to discuss a leadership or executive search?</h2>
           <p>
             Whether you have an active search or want to explore how Meridian
             and Vector can strengthen your talent process, we'd welcome the
