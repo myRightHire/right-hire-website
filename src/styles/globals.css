@@ -180,14 +180,15 @@ section {
   display: inline-flex;
   align-items: center;
   justify-content: flex-start;
-  flex: 0 0 20rem;
-  width: 20rem;
+  flex: 0 0 16.5rem;
+  width: 16.5rem;
   text-decoration: none;
 }
 
 .brand-logo {
   width: 100%;
   height: auto;
+  object-fit: contain;
 }
 
 .site-nav {
@@ -307,7 +308,7 @@ section {
 }
 
 .hero-copy h1 {
-  font-size: clamp(4rem, 8vw, 7rem);
+  font-size: clamp(3.6rem, 7.1vw, 6.25rem);
   line-height: 0.94;
   max-width: 8ch;
 }
@@ -328,12 +329,17 @@ section {
 }
 
 /* Focus / proof */
-.focus-grid,
 .problem-grid,
 .difference-grid {
   display: grid;
   gap: 2rem;
   grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.focus-grid {
+  display: grid;
+  gap: 2rem;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
 }
 
 .focus-card,
@@ -746,7 +752,7 @@ section {
 
   .hero-copy h1 {
     max-width: 9ch;
-    font-size: clamp(3.8rem, 7vw, 6rem);
+    font-size: clamp(3.5rem, 6.4vw, 5.5rem);
   }
 }
 
@@ -755,11 +761,14 @@ section {
     width: min(var(--container), calc(100% - 3rem));
   }
 
-  .focus-grid,
   .problem-grid,
   .difference-grid,
   .platform-grid-two,
   .workflow-steps {
+    grid-template-columns: 1fr;
+  }
+
+  .focus-grid {
     grid-template-columns: 1fr;
   }
 
@@ -796,13 +805,15 @@ section {
   }
 
   .brand {
-    width: 8rem;
-    height: 6.8rem;
+    flex: 0 0 7rem;
+    width: 7rem;
   }
 
   .brand-logo {
-    width: 6.6rem;
-    height: 6.6rem;
+    width: 100%;
+    height: auto;
+    max-height: 3rem;
+    object-fit: contain;
   }
 
   .hero {
@@ -831,7 +842,7 @@ section {
 
   .hero-copy h1 {
     max-width: 9ch;
-    font-size: clamp(3.2rem, 13vw, 5.1rem);
+    font-size: clamp(2.95rem, 11.8vw, 4.55rem);
   }
 
   .hero-lead {
