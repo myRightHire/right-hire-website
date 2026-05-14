@@ -6,6 +6,7 @@ import Footer from "../components/Footer";
 import Header from "../components/Header";
 import Hero from "../components/Hero";
 import PlatformSection from "../components/PlatformSection";
+import ProductShowcaseSection from "../components/ProductShowcaseSection";
 import ProblemSection from "../components/ProblemSection";
 import ProofSection from "../components/ProofSection";
 import WorkflowSection from "../components/WorkflowSection";
@@ -34,6 +35,7 @@ export default function App() {
         <FocusSection />
         <ProblemSection />
         <PlatformSection />
+        <ProductShowcaseSection />
         <WorkflowSection />
         <DifferenceSection />
         <ProofSection />
