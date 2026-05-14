@@ -891,3 +891,175 @@ section {
     gap: 0.75rem;
   }
 }
+
+/* ═══════════════════════════════════════════════════════════════
+   Product Showcase Section — light, matches Platform section tone
+   ═══════════════════════════════════════════════════════════════ */
+
+.product-showcase {
+  background: var(--surface-strong, #ffffff);
+}
+
+.product-showcase__above-grid {
+  max-width: 640px;
+  margin: 0 auto 1.75rem;
+  text-align: center;
+}
+
+.product-showcase__heading {
+  font-family: "Newsreader", serif;
+  font-size: clamp(2rem, 3.5vw, 2.8rem);
+  font-weight: 500;
+  letter-spacing: -0.02em;
+  color: var(--ink);
+  margin-bottom: 0.4rem;
+}
+
+.product-showcase__sub {
+  font-size: clamp(1.05rem, 2vw, 1.25rem);
+  font-weight: 600;
+  color: var(--muted);
+  line-height: 1.5;
+  margin-top: 0;
+}
+
+.product-showcase__grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 2.5rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.product-showcase__panel {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.product-showcase__label {
+  font-size: 0.72rem;
+  font-weight: 800;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--muted);
+  margin-bottom: 1rem;
+}
+
+.product-showcase__label--meridian {
+  color: var(--blue-deep);
+}
+
+.product-showcase__label--vector {
+  color: #a07010;
+}
+
+/* Base frame */
+.product-showcase__frame {
+  width: 100%;
+  height: 280px;
+  background: #fff;
+  border-radius: 14px;
+  border: 3px solid transparent;
+  overflow: hidden;
+  box-shadow:
+    0 8px 32px rgba(42, 34, 25, 0.08),
+    0 24px 56px rgba(42, 34, 25, 0.06);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.product-showcase__frame:hover {
+  transform: translateY(-5px);
+  box-shadow:
+    0 16px 48px rgba(42, 34, 25, 0.11),
+    0 36px 72px rgba(42, 34, 25, 0.08);
+}
+
+/* Meridian — blue frame */
+.product-showcase__frame--meridian {
+  border-color: var(--blue, #4f6fa9);
+  box-shadow:
+    0 0 0 1px rgba(79, 111, 169, 0.15),
+    0 8px 32px rgba(79, 111, 169, 0.12),
+    0 24px 56px rgba(42, 34, 25, 0.06);
+}
+
+.product-showcase__frame--meridian:hover {
+  box-shadow:
+    0 0 0 1px rgba(79, 111, 169, 0.2),
+    0 16px 48px rgba(79, 111, 169, 0.16),
+    0 36px 72px rgba(42, 34, 25, 0.08);
+}
+
+/* Vector — gold frame */
+.product-showcase__frame--vector {
+  border-color: var(--gold, #d4a017);
+  box-shadow:
+    0 0 0 1px rgba(212, 160, 23, 0.2),
+    0 8px 32px rgba(212, 160, 23, 0.12),
+    0 24px 56px rgba(42, 34, 25, 0.06);
+}
+
+.product-showcase__frame--vector:hover {
+  box-shadow:
+    0 0 0 1px rgba(212, 160, 23, 0.28),
+    0 16px 48px rgba(212, 160, 23, 0.18),
+    0 36px 72px rgba(42, 34, 25, 0.08);
+}
+
+.product-showcase__img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: top left;
+}
+
+.product-showcase__product-name {
+  font-family: "Newsreader", serif;
+  font-size: 1.4rem;
+  font-weight: 500;
+  letter-spacing: -0.02em;
+  color: var(--ink);
+  margin-top: 1.25rem;
+  margin-bottom: 0.3rem;
+}
+
+.product-showcase__product-name--meridian {
+  color: var(--blue-deep);
+}
+
+.product-showcase__product-name--vector {
+  color: #a07010;
+}
+
+.product-showcase__product-desc {
+  font-size: 0.9rem;
+  color: var(--muted);
+  line-height: 1.5;
+  max-width: 28ch;
+  text-align: center;
+}
+
+.product-showcase__footnote {
+  margin-top: 3rem;
+  font-size: 0.95rem;
+  color: var(--muted);
+  max-width: 52ch;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  line-height: 1.6;
+}
+
+/* Mobile */
+@media (max-width: 700px) {
+  .product-showcase__grid {
+    grid-template-columns: 1fr;
+    gap: 2.5rem;
+  }
+
+  .product-showcase__frame {
+    height: 220px;
+  }
+}
