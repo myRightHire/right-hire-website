@@ -6,6 +6,7 @@ const navItems = [
   { href: "#platform", label: "Platform" },
   { href: "#how-it-works", label: "How It Works" },
   { href: "#difference", label: "Why Right Hire" },
+  { href: "#open-roles", label: "Open Roles" },
   { href: "#contact", label: "Contact" },
 ];
 

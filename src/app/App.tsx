@@ -5,6 +5,7 @@ import FocusSection from "../components/FocusSection";
 import Footer from "../components/Footer";
 import Header from "../components/Header";
 import Hero from "../components/Hero";
+import OpenRolesSection from "../components/OpenRolesSection";
 import PlatformSection from "../components/PlatformSection";
 import ProductShowcaseSection from "../components/ProductShowcaseSection";
 import ProblemSection from "../components/ProblemSection";
@@ -39,6 +40,7 @@ export default function App() {
         <DifferenceSection />
         <ProofSection />
         <FAQSection />
+        <OpenRolesSection />
         <ContactSection />
       </main>
       <Footer />
