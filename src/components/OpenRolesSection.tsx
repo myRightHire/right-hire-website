@@ -114,7 +114,7 @@ export default function OpenRolesSection() {
                   <h3>{role.title}</h3>
                   <p>{role.description}</p>
                   <a
-                    href={`mailto:contactus@myrighthire.com?subject=${role.mailtoSubject}`}
+                    href={`mailto:c@myrighthire.com?subject=${role.mailtoSubject}`}
                     className="button button-primary"
                   >
                     Express Interest
