@@ -126,8 +126,8 @@ export default function OpenRolesSection() {
         ))}
 
         <p className="roles-footer-note">
-          All roles are sourced and evaluated through{" "}
-          <strong>Meridian</strong>, our proprietary talent operating system.
+          All active searches are managed with{" "}
+          <strong>Meridian</strong>-supported workflow and evaluation discipline.
           Have a mandate or want to discuss a role?{" "}
           <a href="#contact">Get in touch</a>.
         </p>
