@@ -10,19 +10,19 @@ export default function Hero() {
           style={{ backgroundImage: `url(${heroLatticeImage})` }}
         />
         <div className="hero-copy">
-          <p className="eyebrow">Executive Search, Sharpened by Systems</p>
-          <h1>Leadership hiring in advanced tech &amp; manufacturing</h1>
+          <p className="eyebrow">Specialized Executive Search</p>
+          <h1>Leadership hiring that reduces talent risk.</h1>
           <p className="hero-lead">
-            Powered by Meridian + Vector — our proprietary operating system that
-            brings search-firm judgment and systems-level rigor to every
-            mandate.
+            Right Hire is a specialized search firm for advanced technology and
+            manufacturing, strengthened by Meridian + Vector — our internal
+            talent operating system, refined through every real-world mandate.
           </p>
           <div className="hero-actions">
             <a
               className="button button-primary"
-              href="mailto:c@myrighthire.com?subject=Executive%20Search%20Brief%20Request"
+              href="mailto:c@myrighthire.com?subject=Strategy%20Conversation%20Request"
             >
-              Request Executive Search Brief
+              Schedule a Strategy Conversation
             </a>
             <a className="button button-secondary" href="#platform">
               See the Platform

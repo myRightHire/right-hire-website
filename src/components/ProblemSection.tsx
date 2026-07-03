@@ -4,10 +4,7 @@ export default function ProblemSection() {
       <div className="container">
         <div className="section-heading">
           <p className="eyebrow">The Challenge</p>
-          <h2>
-            Most high-value searches still rely on fragmented tools and
-            inconsistent judgment.
-          </h2>
+          <h2>Where executive searches break down.</h2>
         </div>
         <div className="problem-grid">
           <div className="problem-card">

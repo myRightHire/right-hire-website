@@ -10,6 +10,7 @@ import PlatformSection from "../components/PlatformSection";
 import ProductShowcaseSection from "../components/ProductShowcaseSection";
 import ProblemSection from "../components/ProblemSection";
 import ProofSection from "../components/ProofSection";
+import WhoWeServeSection from "../components/WhoWeServeSection";
 import WorkflowSection from "../components/WorkflowSection";
 
 type PolicyType = "privacy" | "terms";
@@ -38,6 +39,7 @@ export default function App() {
         <ProductShowcaseSection />
         <WorkflowSection />
         <DifferenceSection />
+        <WhoWeServeSection />
         <ProofSection />
         <FAQSection />
         <OpenRolesSection />
