@@ -11,7 +11,7 @@ export default function Hero() {
         />
         <div className="hero-copy">
           <p className="eyebrow">Specialized Executive Search</p>
-          <h1>Leadership hiring that reduces talent risk.</h1>
+          <h1>Every critical hire shapes your company's trajectory.</h1>
           <p className="hero-lead">
             Right Hire is a specialized search firm for advanced technology and
             manufacturing, strengthened by Meridian + Vector — our internal
