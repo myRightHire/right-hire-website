@@ -96,8 +96,8 @@ export default function OpenRolesSection() {
           <p className="eyebrow">Open Roles</p>
           <h2>Current search assignments</h2>
           <p>
-            Roles powered by Meridian — our proprietary recruiting and sourcing
-            operating system. New mandates added regularly.
+            Active searches managed through Meridian — our recruiting and
+            sourcing operating system. New mandates added regularly.
           </p>
         </div>
 

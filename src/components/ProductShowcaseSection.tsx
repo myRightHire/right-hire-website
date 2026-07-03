@@ -36,7 +36,7 @@ export default function ProductShowcaseSection() {
               Meridian
             </div>
             <p className="product-showcase__product-desc">
-              AI-assisted recruiting &amp; sourcing operating system
+              Recruiting &amp; sourcing operating system
             </p>
           </div>
 
@@ -54,13 +54,13 @@ export default function ProductShowcaseSection() {
               Vector
             </div>
             <p className="product-showcase__product-desc">
-              AI-native executive intelligence &amp; decision layer
+              Executive brief &amp; decision-support layer
             </p>
           </div>
         </div>
 
         <p className="product-showcase__footnote">
-          Together they create an AI-assisted, defensible, repeatable advantage in high-stakes hiring.
+          Together they bring operating discipline and real visibility to high-consequence hiring decisions.
         </p>
       </div>
     </section>

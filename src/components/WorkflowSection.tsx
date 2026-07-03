@@ -29,8 +29,8 @@ export default function WorkflowSection() {
           <p className="eyebrow">Our Process</p>
           <h2>A sharper way to run executive search.</h2>
           <p>
-            An AI-assisted operating approach that helps clarify the mandate,
-            sharpen sourcing, and preserve evidence as the search advances.
+            A disciplined operating approach that clarifies the mandate,
+            sharpens sourcing, and preserves evidence as the search advances.
           </p>
         </div>
         <div className="workflow-steps">

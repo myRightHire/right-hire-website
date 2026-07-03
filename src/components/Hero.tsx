@@ -25,7 +25,7 @@ export default function Hero() {
               Schedule a Strategy Conversation
             </a>
             <a className="button button-secondary" href="#platform">
-              See the Platform
+              Explore Our Approach
             </a>
           </div>
         </div>

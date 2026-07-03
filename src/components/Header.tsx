@@ -32,9 +32,9 @@ export default function Header() {
 
         <a
           className="nav-cta button-primary"
-          href="mailto:c@myrighthire.com?subject=Right%20Hire%20Demo%20Request"
+          href="mailto:c@myrighthire.com?subject=Strategy%20Conversation%20Request"
         >
-          Request Brief
+          Strategy Call
         </a>
 
         <button
@@ -59,10 +59,10 @@ export default function Header() {
               ))}
               <a
                 className="button button-primary mobile-menu-cta"
-                href="mailto:c@myrighthire.com?subject=Right%20Hire%20Demo%20Request"
+                href="mailto:c@myrighthire.com?subject=Strategy%20Conversation%20Request"
                 onClick={closeMenu}
               >
-                Request Brief
+                Strategy Call
               </a>
             </nav>
           </div>

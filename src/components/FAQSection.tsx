@@ -7,7 +7,7 @@ const faqs = [
   {
     question: "Are you a search firm or a software company?",
     answer:
-      "Right Hire is a search firm with a focused operating model. Meridian and Vector are the systems that power how we run search and how we surface talent decisions more clearly.",
+      "Right Hire is a search firm with a focused operating model. Meridian and Vector are the systems that support how we run search and surface talent decisions more clearly.",
   },
   {
     question: "What is Meridian?",
