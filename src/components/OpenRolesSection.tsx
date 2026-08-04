@@ -49,33 +49,6 @@ const categories = [
     label: "Corporate & Leadership",
     roles: [
       {
-        id: 5,
-        location: "Southeast US (On-site)",
-        type: "Full-time",
-        title: "Director of Collections",
-        description:
-          "Leading collections strategy and a high-performing team responsible for a large accounts receivable portfolio in a manufacturing/distribution environment. Drive process improvements, cash flow performance, cross-functional collaboration, and Billing-to-Cash excellence while maintaining strong customer relationships.",
-        mailtoSubject: "Director%20of%20Collections",
-      },
-      {
-        id: 6,
-        location: "Southeast US (On-site)",
-        type: "Full-time",
-        title: "Corporate Controller",
-        description:
-          "Supporting corporate accounting leadership in a growing manufacturing organization. Oversee financial close processes, GAAP reporting, internal controls, system improvements, and cross-functional collaboration to ensure accurate, timely, and compliant financial operations.",
-        mailtoSubject: "Corporate%20Controller",
-      },
-      {
-        id: 7,
-        location: "Southeast US (On-site)",
-        type: "Full-time",
-        title: "Accounting Manager",
-        description:
-          "Managing day-to-day accounting operations (AP, AR, taxes, reconciliations) in a manufacturing environment. Support month-end close, cash forecasting, financial reporting, team development, and process improvements while maintaining strong internal controls.",
-        mailtoSubject: "Accounting%20Manager",
-      },
-      {
         id: 8,
         location: "Southeast US (On-site / Hybrid)",
         type: "Full-time",
