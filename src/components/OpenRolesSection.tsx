@@ -11,24 +11,6 @@ const categories = [
           "Leading field deployment and installation operations for a leading manufacturer of industrial equipment. Own technician coordination, multi-site conversions, deployment execution, escalation management, and operational performance to ensure seamless customer implementations and scalable field operations.",
         mailtoSubject: "Field%20Manager%20%E2%80%93%20Deployment%20Operations",
       },
-      {
-        id: 2,
-        location: "Southeast US (On-site)",
-        type: "Full-time",
-        title: "Training Manager – Technical Workforce Development",
-        description:
-          "Driving technical training, technician onboarding, and workforce readiness programs for a high-growth industrial equipment manufacturer. Develop scalable training curricula, certification standards, and enablement initiatives that improve field execution, deployment quality, and overall operational consistency.",
-        mailtoSubject: "Training%20Manager%20%E2%80%93%20Technical%20Workforce%20Development",
-      },
-      {
-        id: 3,
-        location: "Southeast US (On-site)",
-        type: "Full-time",
-        title: "Project Manager – Transformation Initiatives",
-        description:
-          "Delivering complex cross-functional projects in a manufacturing and technology transformation environment. Own end-to-end execution, risk management, stakeholder alignment, and measurable business outcomes, with exposure to ERP implementations and operational change.",
-        mailtoSubject: "Project%20Manager%20%E2%80%93%20Transformation%20Initiatives",
-      },
     ],
   },
   {
@@ -42,20 +24,6 @@ const categories = [
         description:
           "Overseeing safety, environmental compliance, and hazardous materials programs across manufacturing and distribution operations. Ensure OSHA, DOT, and regulatory adherence while driving a strong culture of safety, training, and continuous improvement.",
         mailtoSubject: "Compliance%20%26%20Safety%20Specialist",
-      },
-    ],
-  },
-  {
-    label: "Corporate & Leadership",
-    roles: [
-      {
-        id: 8,
-        location: "Southeast US (On-site / Hybrid)",
-        type: "Full-time",
-        title: "Customer Success Manager – Technology",
-        description:
-          "Managing long-term customer relationships and driving adoption of advanced technology solutions for a leading industrial equipment manufacturer. Serve as the primary point of contact, deliver exceptional customer experiences, gather insights for product improvement, and maximize customer value and retention.",
-        mailtoSubject: "Customer%20Success%20Manager%20%E2%80%93%20Technology",
       },
     ],
   },
