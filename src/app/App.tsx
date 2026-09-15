@@ -14,12 +14,11 @@ export default function App() {
     <Header />
     <main id="main-content">
       <section className="v2-hero"><div className="container">
-        <p className="eyebrow">RIGHT HIRE / RECRUITING WITH INTENTION</p>
-        <div className="v2-hero-grid"><div><h1>A named recruiter.<br/>Reserved capacity.<br/><em>Direct founder involvement.</em></h1>
-        <p className="v2-lede">Right Hire is a deliberately small firm. For Customer Success, Account Management, and technical service roles in technology and manufacturing companies, you work with a named recruiter with direct founder involvement.</p>
+        <p className="eyebrow">RIGHT HIRE / SMALL BY DESIGN · RECRUITING WITH INTENTION</p>
+        <h1>Specialized recruiting for technology and manufacturing companies.</h1>
+        <p className="v2-lede">Right Hire works with a small number of clients at a time — so every search gets a named recruiter, reserved capacity, and direct founder involvement.</p>
         <a className="button button-primary" href={contact}>Discuss a search <span aria-hidden="true">↗</span></a>
-        <p className="v2-note">Retained Search &amp; Recruiting Managed Services are our primary models. Contingent is available for well-qualified individual roles.</p></div>
-        <aside className="v2-hero-aside"><span className="v2-small-mark" aria-hidden="true">RH<span>↗</span></span><p className="eyebrow">SMALL BY DESIGN</p><h2>Closer to the work.<br/>Accountable for the search.</h2><p>Named recruiter. Reserved capacity. Hands-on founder involvement.</p><div className="v2-aside-foot">THE RETAINED &amp; RMS COMMITMENT</div></aside></div>
+        <p className="v2-note">Retained Search &amp; Recruiting Managed Services are our primary models. Contingent is available for well-qualified individual roles.</p>
       </div></section>
       <section className="v2-proof" aria-labelledby="proof-title"><div className="container"><p className="eyebrow" id="proof-title">RECENT TECHNOLOGY CLIENT ENGAGEMENT</p><div className="v2-metrics"><div><strong>20</strong><h3>accepted offers</h3><p>ahead of a 4-month deadline</p></div><div><strong>29<span> business days</span></strong><h3>average requisition-to-acceptance</h3></div><div><strong>70<span>%</span></strong><h3>of presented candidates</h3><p>progressed to interviews</p></div></div><p className="v2-proof-note">Delivered under real deadline pressure for a technology client scaling critical post-sale and service capacity.</p></div></section>
       <section id="engagement-models"><div className="container"><div className="v2-section-head"><div><p className="eyebrow">01 / ENGAGEMENT MODELS</p><h2>The right level<br/>of partnership.</h2></div><p>A single critical hire or an ongoing recruiting need. Start with the model that fits the work.</p></div><div className="v2-models">{models.map((m,i)=><article className={i===1?"v2-model featured":"v2-model"} key={m.name}><p className="eyebrow">{m.tag}</p><h3>{m.name}</h3><p>{m.body}</p><p className="v2-model-details">{m.details}</p><div className="v2-fit"><strong>Best for</strong><p>{m.fit}</p></div><a href={`mailto:c@myrighthire.com?subject=${encodeURIComponent("Discuss " + m.name)}`}>Talk about this model <span aria-hidden="true">↗</span></a></article>)}</div></div></section>
