@@ -1,53 +1,35 @@
-import ContactSection from "../components/ContactSection";
-import DifferenceSection from "../components/DifferenceSection";
-import FAQSection from "../components/FAQSection";
-import FocusSection from "../components/FocusSection";
-import Footer from "../components/Footer";
 import Header from "../components/Header";
-import Hero from "../components/Hero";
-import OpenRolesSection from "../components/OpenRolesSection";
-import PlatformSection from "../components/PlatformSection";
-import ProductShowcaseSection from "../components/ProductShowcaseSection";
-import ProblemSection from "../components/ProblemSection";
-import ProofSection from "../components/ProofSection";
-import WhoWeServeSection from "../components/WhoWeServeSection";
-import WorkflowSection from "../components/WorkflowSection";
-
+import Footer from "../components/Footer";
 type PolicyType = "privacy" | "terms";
-
+const contact = "mailto:c@myrighthire.com?subject=Discuss%20a%20search";
+const models = [
+  {name:"Contingent", tag:"For a defined individual hire", body:"Market access and focused recruiting for well-qualified individual roles.", details:"Success-based fee on placement.", fit:"A clear brief and a single hiring need."},
+  {name:"Retained Search", tag:"Dedicated search partnership", body:"A named recruiter, reserved capacity, and direct founder involvement on every retained search.", details:"Defined scope and milestone-based fees.", fit:"A consequential hire that needs dedicated focus."},
+  {name:"Recruiting Managed Services", tag:"An extension of your team", body:"Embedded recruiting capability for ongoing or multi-role needs, without adding permanent headcount.", details:"Reserved capacity, a reporting rhythm, stakeholder management, and consistent process ownership.", fit:"Sustained hiring needs that require continuity."},
+];
 export default function App() {
-  const path =
-    typeof window !== "undefined"
-      ? window.location.pathname.replace(/\/+$/, "") || "/"
-      : "/";
-
-  if (path === "/privacy") {
-    return <PolicyPage type="privacy" />;
-  }
-
-  if (path === "/terms") {
-    return <PolicyPage type="terms" />;
-  }
-
-  return (
-    <div className="site-shell">
-      <Header />
-      <main>
-        <Hero />
-        <FocusSection />
-        <ProblemSection />
-        <ProductShowcaseSection />
-        <WorkflowSection />
-        <DifferenceSection />
-        <WhoWeServeSection />
-        <ProofSection />
-        <FAQSection />
-        <OpenRolesSection />
-        <ContactSection />
-      </main>
-      <Footer />
-    </div>
-  );
+  const path = window.location.pathname.replace(/\/+$/, "") || "/";
+  if (path === "/privacy" || path === "/terms") return <PolicyPage type={path.slice(1) as PolicyType} />;
+  return <div className="site-shell rh-v2" id="top">
+    <Header />
+    <main id="main-content">
+      <section className="v2-hero"><div className="container">
+        <p className="eyebrow">RIGHT HIRE / RECRUITING WITH INTENTION</p>
+        <div className="v2-hero-grid"><div><h1>A named recruiter.<br/>Reserved capacity.<br/><em>Direct founder involvement.</em></h1>
+        <p className="v2-lede">Right Hire is a deliberately small firm. For Customer Success, Account Management, and technical service roles in technology and manufacturing companies, you work with a named recruiter with direct founder involvement.</p>
+        <a className="button button-primary" href={contact}>Discuss a search <span aria-hidden="true">↗</span></a>
+        <p className="v2-note">Retained Search &amp; Recruiting Managed Services are our primary models. Contingent is available for well-qualified individual roles.</p></div>
+        <aside className="v2-hero-aside"><span className="v2-small-mark" aria-hidden="true">RH<span>↗</span></span><p className="eyebrow">SMALL BY DESIGN</p><h2>Closer to the work.<br/>Accountable for the search.</h2><p>Named recruiter. Reserved capacity. Hands-on founder involvement.</p><div className="v2-aside-foot">THE RETAINED &amp; RMS COMMITMENT</div></aside></div>
+      </div></section>
+      <section className="v2-proof" aria-labelledby="proof-title"><div className="container"><p className="eyebrow" id="proof-title">RECENT TECHNOLOGY CLIENT ENGAGEMENT</p><div className="v2-metrics"><div><strong>20</strong><h3>accepted offers</h3><p>ahead of a 4-month deadline</p></div><div><strong>29<span> business days</span></strong><h3>average requisition-to-acceptance</h3></div><div><strong>70<span>%</span></strong><h3>of presented candidates</h3><p>progressed to interviews</p></div></div><p className="v2-proof-note">Delivered under real deadline pressure for a technology client scaling critical post-sale and service capacity.</p></div></section>
+      <section id="engagement-models"><div className="container"><div className="v2-section-head"><div><p className="eyebrow">01 / ENGAGEMENT MODELS</p><h2>The right level<br/>of partnership.</h2></div><p>A single critical hire or an ongoing recruiting need. Start with the model that fits the work.</p></div><div className="v2-models">{models.map((m,i)=><article className={i===1?"v2-model featured":"v2-model"} key={m.name}><p className="eyebrow">{m.tag}</p><h3>{m.name}</h3><p>{m.body}</p><p className="v2-model-details">{m.details}</p><div className="v2-fit"><strong>Best for</strong><p>{m.fit}</p></div><a href={`mailto:c@myrighthire.com?subject=${encodeURIComponent("Discuss " + m.name)}`}>Talk about this model <span aria-hidden="true">↗</span></a></article>)}</div></div></section>
+      <section className="v2-soft" id="who-this-is-for"><div className="container"><p className="eyebrow">02 / WHO THIS IS FOR</p><h2>Built for the people<br/>who own the hire.</h2><div className="v2-buyers">{[["TA / HR leaders","Coordination that makes your work easier.","Clean handoffs, consistent reporting, and stakeholder management from a partner who reduces noise."],["Business leaders","A shortlist grounded in the actual work.","We clarify what the hire needs to accomplish, then focus the search and evaluation on that reality."],["Procurement / Finance","A clearly defined engagement.","Defined scope, a transparent fee structure, and a measurable process you can follow."]].map(([title,headline,body])=><article key={title}><p className="eyebrow">{title}</p><h3>{headline}</h3><p>{body}</p></article>)}</div></div></section>
+      <section id="difference"><div className="container v2-split"><div><p className="eyebrow">03 / WHY RIGHT HIRE</p><h2>Deliberately small.<br/>High judgment.<br/><em>Hands-on.</em></h2></div><div className="v2-prose"><p>We keep the relationship close and the work focused. On retained and RMS engagements, you have a named recruiter with reserved capacity and the founder directly involved.</p><p>Our focus is technology and manufacturing companies, with core roles in Customer Success, Account Management, and technical service and support.</p><p>You get operating discipline, clear communication, and personal ownership of the search.</p><a className="v2-text-link" href="#about">Meet the founder <span aria-hidden="true">↗</span></a></div></div></section>
+      <section className="v2-process" id="how-it-works"><div className="container"><p className="eyebrow">04 / HOW WE WORK</p><h2>Clarity first. Follow-through throughout.</h2><ol className="v2-steps">{[["Role clarity","Define the work, the success profile, and the expectations."],["Focused search","Bring dedicated focus, with reserved capacity on retained and RMS engagements."],["Structured evaluation","Evaluate consistently and keep stakeholders aligned."],["Offer & handoff","Support the offer and make the transition clear."]].map(([title,body],i)=><li key={title}><span>0{i+1}</span><h3>{title}</h3><p>{body}</p></li>)}</ol><p className="v2-process-note">We track every search in our own system so nothing falls through the cracks.</p></div></section>
+      <section id="about"><div className="container v2-split"><div><p className="eyebrow">05 / THE FOUNDER</p><h2>Chris Dempsey</h2><p className="v2-founder-caption">Nearly 30 years in recruiting.<br/>Still close to the work.</p></div><div className="v2-prose"><p>Chris brings nearly three decades of recruiting experience to Right Hire, including TA leadership at Sourcefire prior to its acquisition by Cisco, building recruiting capability during Cisco’s Professional Services-to-CX transition, recruiting leadership at Norsk Hydro Aluminum, and TA leadership at Wind River.</p><p>That experience informs a practical, hands-on approach to each engagement: understand the business, clarify the hire, and stay involved.</p><div className="v2-career">Norsk Hydro Aluminum <span>·</span> Sourcefire <span>·</span> Cisco <span>·</span> Wind River</div></div></div></section>
+      <section className="v2-contact" id="contact"><div className="container"><p className="eyebrow">LET’S TALK ABOUT THE WORK</p><h2>Ready to discuss a search<br/>or an RMS engagement?</h2><p>No pitch deck. Just a clear discussion about the roles you need to fill.</p><a className="button" href={contact}>Schedule a conversation <span aria-hidden="true">↗</span></a><a className="v2-email" href="mailto:c@myrighthire.com">c@myrighthire.com</a></div></section>
+    </main><Footer />
+  </div>;
 }
 
 function PolicyPage({ type }: { type: PolicyType }) {
@@ -56,7 +38,7 @@ function PolicyPage({ type }: { type: PolicyType }) {
   return (
     <div className="site-shell">
       <Header />
-      <main className="policy-page">
+      <main className="policy-page" id="main-content">
         <div className="container">
           <div className="policy-card">
             <p className="eyebrow">{isPrivacy ? "Privacy" : "Terms"}</p>
@@ -64,7 +46,7 @@ function PolicyPage({ type }: { type: PolicyType }) {
             <p className="policy-intro">
               {isPrivacy
                 ? "Right Hire respects your privacy. This page explains, at a high level, what information we collect, how we use it, and how to contact us with questions."
-                : "These terms explain the basic rules for using Right Hire websites, demos, and related materials."}
+                : "These terms explain the basic rules for using Right Hire websites and related materials."}
             </p>
 
             {isPrivacy ? (
@@ -74,14 +56,14 @@ function PolicyPage({ type }: { type: PolicyType }) {
                   <p>
                     We may collect information you choose to share with us,
                     including your name, email address, company details, and
-                    information related to recruiting or demo inquiries.
+                    information related to recruiting inquiries.
                   </p>
                 </section>
                 <section>
                   <h2>How we use information</h2>
                   <p>
                     We use information to respond to inquiries, schedule
-                    conversations, provide demos, improve our services, and
+                    conversations, improve our services, and
                     support recruiting and talent-related workflows.
                   </p>
                 </section>
@@ -114,15 +96,14 @@ function PolicyPage({ type }: { type: PolicyType }) {
                 <section>
                   <h2>No guarantee</h2>
                   <p>
-                    Content is provided for general information. Demo materials,
-                    recruiting workflows, and product availability may change
+                    Content is provided for general information. Recruiting services and related materials may change
                     over time.
                   </p>
                 </section>
                 <section>
                   <h2>Intellectual property</h2>
                   <p>
-                    Right Hire, Meridian, Vector, and related content, branding,
+                    Right Hire and related content, branding,
                     and materials remain the property of Right Hire unless
                     otherwise stated.
                   </p>

@@ -2,12 +2,10 @@ import { useState } from "react";
 import logoImage from "../imports/right-hire-logo-transparent.png";
 
 const navItems = [
-  { href: "#focus", label: "Focus" },
-  { href: "#platform", label: "Platform" },
-  { href: "#how-it-works", label: "How It Works" },
-  { href: "#difference", label: "Why Right Hire" },
-  { href: "#open-roles", label: "Open Roles" },
-  { href: "#contact", label: "Contact" },
+  { href: "/#engagement-models", label: "Engagement Models" },
+  { href: "/#difference", label: "Why Right Hire" },
+  { href: "/#about", label: "About" },
+  { href: "/#contact", label: "Contact" },
 ];
 
 export default function Header() {
@@ -17,8 +15,9 @@ export default function Header() {
 
   return (
     <header className="site-header">
+      <a className="v2-skip" href="#main-content">Skip to content</a>
       <div className="container nav-shell">
-        <a className="brand" href="#top" onClick={closeMenu} aria-label="Right Hire home">
+        <a className="brand" href="/#top" onClick={closeMenu} aria-label="Right Hire home">
           <img className="brand-logo" src={logoImage} alt="Right Hire" />
         </a>
 
@@ -32,9 +31,9 @@ export default function Header() {
 
         <a
           className="nav-cta button-primary"
-          href="mailto:c@myrighthire.com?subject=Strategy%20Conversation%20Request"
+          href="mailto:c@myrighthire.com?subject=Discuss%20a%20search"
         >
-          Strategy Call
+          Discuss a search
         </a>
 
         <button
@@ -42,6 +41,8 @@ export default function Header() {
           type="button"
           aria-label={menuOpen ? "Close menu" : "Open menu"}
           aria-expanded={menuOpen}
+          aria-controls="mobile-navigation"
+          onKeyDown={(event) => { if (event.key === "Escape") closeMenu(); }}
           onClick={() => setMenuOpen((open) => !open)}
         >
           {menuOpen ? "×" : "☰"}
@@ -49,7 +50,7 @@ export default function Header() {
       </div>
 
       {menuOpen ? (
-        <div className="mobile-menu">
+        <div className="mobile-menu" id="mobile-navigation" onKeyDown={(event) => { if (event.key === "Escape") closeMenu(); }}>
           <div className="container mobile-menu-shell">
             <nav className="mobile-nav" aria-label="Mobile primary">
               {navItems.map((item) => (
@@ -59,10 +60,10 @@ export default function Header() {
               ))}
               <a
                 className="button button-primary mobile-menu-cta"
-                href="mailto:c@myrighthire.com?subject=Strategy%20Conversation%20Request"
+                href="mailto:c@myrighthire.com?subject=Discuss%20a%20search"
                 onClick={closeMenu}
               >
-                Strategy Call
+                Discuss a search
               </a>
             </nav>
           </div>
