@@ -67,6 +67,16 @@ function PolicyPage({ type }: { type: PolicyType }) {
                   </p>
                 </section>
                 <section>
+                  <h2>Website analytics and intelligence tools</h2>
+                  <p>
+                    We use third-party tools to understand how our website is
+                    used and to identify companies that visit our site. These
+                    tools may collect information such as IP addresses and
+                    browsing activity on this site. They do not collect personal
+                    information beyond what you choose to share with us directly.
+                  </p>
+                </section>
+                <section>
                   <h2>Sharing and protection</h2>
                   <p>
                     We do not sell personal information. We may use trusted
