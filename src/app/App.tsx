@@ -28,11 +28,11 @@ export default function App() {
         </div>
         <div>
           <svg className="v2-metric-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><polyline points="12 7 12 12 15.5 14"/></svg>
-          <strong>29<span> days</span></strong><h3>Time-to-Fill</h3><p>average, requisition to acceptance</p>
+          <strong>29<span> days</span></strong><h3>Time-to-Fill</h3>
         </div>
         <div>
           <svg className="v2-metric-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
-          <strong>70<span>%</span></strong><h3>% of Presented Candidates Interviewed</h3>
+          <strong>70<span>%</span></strong><h3>Presented Candidates Interviewed</h3>
         </div>
       </div></div></section>
       <section id="engagement-models"><div className="container"><div className="v2-section-head"><div><h2>The right level<br/>of partnership.</h2></div></div><div className="v2-models">{models.map((m,i)=><article className={i===1?"v2-model featured":"v2-model"} key={m.name}><p className="eyebrow">{m.tag}</p><h3>{m.name}</h3><p>{m.body}</p><p className="v2-model-details">{m.details}</p><div className="v2-fit"><strong>Best for</strong><p>{m.fit}</p></div><a href={`mailto:c@myrighthire.com?subject=${encodeURIComponent("Discuss " + m.name)}`}>Talk about this model <span aria-hidden="true">↗</span></a></article>)}</div></div></section>
