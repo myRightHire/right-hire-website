@@ -2,6 +2,7 @@ import Header from "../components/Header";
 import Footer from "../components/Footer";
 import founderPhoto from "../assets/chris-dempsey.jpg";
 import bgDecoration from "../assets/Vwi3G.jpg";
+import { Handshake } from "lucide-react";
 type PolicyType = "privacy" | "terms";
 const contact = "mailto:c@myrighthire.com?subject=Discuss%20a%20search";
 const models = [
@@ -22,7 +23,7 @@ export default function App() {
       </div></section>
       <section className="v2-proof" aria-labelledby="proof-title"><div className="container"><h2 className="v2-proof-heading" id="proof-title">Metrics from Recent Technology Client Engagement</h2><p className="v2-proof-context">Delivered under real deadline pressure for a technology client scaling critical post-sale and service capacity.</p><div className="v2-metrics">
         <div>
-          <svg className="v2-metric-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true"><path d="M5.5 17.5L2 21m5.5-3.5c.5.5 1 1.5 2.5 1.5s2.5-1 3.5-2l4-4c1-1 1-2.5 0-3.5s-2.5-1-3.5 0l-1 1m-5 7L8 19.5M13 8l1-1c1-1 2.5-1 3.5 0l1 1M9.5 11.5l4-4"/></svg>
+          <Handshake className="v2-metric-icon" aria-hidden="true" strokeWidth={1.8} />
           <strong>20</strong><h3>Accepted Offers</h3>
         </div>
         <div>
