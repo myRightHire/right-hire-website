@@ -17,26 +17,10 @@ export default function App() {
     <Header />
     <main id="main-content">
       <section className="v2-hero" style={{position:'relative'}}><div className="v2-bg-decoration" style={{backgroundImage:`url(${bgDecoration})`}} aria-hidden="true" /><div className="container" style={{position:'relative',zIndex:1}}>
-        <h1>Engineering and post-sales recruiting.<br className="v2-hero-br" /><em>Personal ownership of every search.</em></h1>
-        <p className="v2-lede">Specialized recruiting with dedicated attention and clear ownership of your search. Deliberately small, so we stay close to the work.</p>
-        <p className="v2-hero-industries">Serving healthcare and life sciences, security and cybersecurity, and manufacturing companies.</p>
+        <h1>Specialized recruiting for engineering and post-sales.</h1>
+        <p className="v2-lede">Dedicated attention and clear ownership of your search. Deliberately small, so we stay close to the work.</p>
         <a className="button button-primary" href={contact}>Discuss a search <span aria-hidden="true">↗</span></a>
-        <p className="v2-hero-commitment">Retained search and RMS engagements include a named recruiter, reserved capacity, and direct founder involvement.</p>
       </div></section>
-      <section className="v2-proof" aria-labelledby="proof-title"><div className="container"><h2 className="v2-proof-heading" id="proof-title">Results from a recent technology client engagement</h2><p className="v2-proof-context">Delivered under real deadline pressure for a technology client scaling critical post-sale and service capacity.</p><div className="v2-metrics">
-        <div>
-          <Handshake className="v2-metric-icon" aria-hidden="true" strokeWidth={1.8} />
-          <strong>20</strong><h3>Accepted Offers</h3><p>Ahead of a four-month deadline</p>
-        </div>
-        <div>
-          <svg className="v2-metric-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><polyline points="12 7 12 12 15.5 14"/></svg>
-          <strong>29</strong><h3>business days</h3><p>Average requisition-to-acceptance</p>
-        </div>
-        <div>
-          <svg className="v2-metric-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
-          <strong>70<span>%</span></strong><h3>of presented candidates</h3><p>Progressed to interviews</p>
-        </div>
-      </div></div></section>
       <section id="our-focus" className="v2-expertise"><div className="container">
         <h2>Focused expertise.<br/>Across the industries we serve.</h2>
         <p className="v2-expertise-intro">Our focus is engineering and post-sales hiring: the people who build complex products and systems, and the people who help customers implement, use, and maintain them.</p>
@@ -55,6 +39,20 @@ export default function App() {
       <section className="v2-soft" id="who-this-is-for"><div className="container"><h2>Built for the people<br/>who own the hire.</h2><div className="v2-buyers">{[["TA / HR leaders","Coordination that makes your work easier.","Clean handoffs, consistent reporting, and stakeholder management from a partner who reduces noise."],["Business leaders","A shortlist grounded in the actual work.","We clarify what the hire needs to accomplish, then focus the search and evaluation on that reality."],["Procurement / Finance","A clearly defined engagement.","Defined scope, a transparent fee structure, and a measurable process you can follow."]].map(([title,headline,body])=><article key={title}><p className="eyebrow">{title}</p><h3>{headline}</h3><p>{body}</p></article>)}</div></div></section>
       <section id="difference"><div className="container v2-split"><div><h2>Deliberately small.<br/>High judgment.<br/><em>Hands-on.</em></h2></div><div className="v2-prose"><p>We deliberately work with a small number of clients at a time so we can stay close to the work. On retained search and RMS engagements, you have a named recruiter with reserved capacity and the founder directly involved.</p><p>Our expertise is engineering and post-sales recruiting. We apply that focus across healthcare and life sciences, security and cybersecurity, and manufacturing businesses.</p><p>You get operating discipline, clear communication, and personal ownership of the search.</p><a className="v2-text-link" href="#about">Meet the founder <span aria-hidden="true">↗</span></a></div></div></section>
       <section className="v2-process" id="how-it-works"><div className="container"><h2>Clarity first. Follow-through throughout.</h2><ol className="v2-steps">{[["Role clarity","Define the work, the success profile, and the expectations."],["Focused search","Bring dedicated focus, with reserved capacity on retained and RMS engagements."],["Structured evaluation","Evaluate consistently and keep stakeholders aligned."],["Offer & handoff","Support the offer and make the transition clear."]].map(([title,body],i)=><li key={title}><span>0{i+1}</span><h3>{title}</h3><p>{body}</p></li>)}</ol><p className="v2-process-note">We track every search in our own system so nothing falls through the cracks.</p></div></section>
+      <section className="v2-proof" aria-labelledby="proof-title"><div className="container"><h2 className="v2-proof-heading" id="proof-title">Results from a recent technology client engagement</h2><p className="v2-proof-context">Delivered under real deadline pressure for a technology client scaling critical post-sale and service capacity.</p><div className="v2-metrics">
+        <div>
+          <Handshake className="v2-metric-icon" aria-hidden="true" strokeWidth={1.8} />
+          <strong>20</strong><h3>Accepted Offers</h3><p>Ahead of a four-month deadline</p>
+        </div>
+        <div>
+          <svg className="v2-metric-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><polyline points="12 7 12 12 15.5 14"/></svg>
+          <strong>29</strong><h3>business days</h3><p>Average requisition-to-acceptance</p>
+        </div>
+        <div>
+          <svg className="v2-metric-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+          <strong>70<span>%</span></strong><h3>of presented candidates</h3><p>Progressed to interviews</p>
+        </div>
+      </div></div></section>
       <section id="about" style={{position:'relative'}}><div className="container v2-split"><div><h2>Chris Dempsey</h2><p className="v2-founder-title">Founder</p><p className="v2-founder-caption">Nearly 30 years in recruiting.<br/>Still close to the work.</p><img className="v2-founder-photo" src={founderPhoto} alt="Chris Dempsey, Founder of Right Hire" /></div><div className="v2-prose"><p>Chris brings nearly three decades of recruiting experience to Right Hire, including TA leadership at Sourcefire prior to its acquisition by Cisco, building recruiting capability during Cisco’s Professional Services-to-CX transition, recruiting leadership at Norsk Hydro Aluminum, and TA leadership at Wind River.</p><p>That experience informs a practical, hands-on approach to each engagement: understand the business, clarify the hire, and stay involved.</p><div className="v2-career">Norsk Hydro Aluminum <span>·</span> Sourcefire <span>·</span> Cisco <span>·</span> Wind River</div></div></div></section>
       <section className="v2-contact" id="contact"><div className="container"><p className="eyebrow">LET’S TALK ABOUT THE WORK</p><h2>Ready to discuss a search<br/>or an RMS engagement?</h2><p>No pitch deck. Just a clear discussion about the roles you need to fill.</p><a className="button" href={contact}>Schedule a conversation <span aria-hidden="true">↗</span></a><a className="v2-email" href="mailto:c@myrighthire.com">c@myrighthire.com</a></div></section>
     </main><Footer />
