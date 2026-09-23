@@ -3,6 +3,9 @@ import Header from "../components/Header";
 import Footer from "../components/Footer";
 import founderPhoto from "../assets/chris-dempsey.jpg";
 import bgDecoration from "../assets/Vwi3G.jpg";
+import industryHealthcare from "../assets/industry-healthcare.jpg";
+import industrySecurity from "../assets/industry-security.jpg";
+import industryManufacturing from "../assets/industry-manufacturing.jpg";
 import { Handshake, Cpu, LifeBuoy, Target, Search, ClipboardCheck, BadgeCheck } from "lucide-react";
 type PolicyType = "privacy" | "terms";
 const contact = "mailto:c@myrighthire.com?subject=Discuss%20a%20search";
@@ -46,9 +49,9 @@ export default function App() {
         </div>
         <p className="v2-industries-label">Industries we serve</p>
         <div className="v2-industries">
-          <div className="v2-industry"><h4>Healthcare &amp; Life Sciences</h4><p>Healthcare, pharmaceutical, and biotechnology companies.</p></div>
-          <div className="v2-industry"><h4>Security &amp; Cybersecurity</h4><p>Companies delivering security and cybersecurity products and services.</p></div>
-          <div className="v2-industry"><h4>Manufacturing &amp; Industrial</h4><p>Manufacturing and industrial businesses.</p></div>
+          <div className="v2-industry"><img className="v2-industry-img" src={industryHealthcare} alt="Scientists reviewing diagnostic data in a laboratory" /><h4>Healthcare &amp; Life Sciences</h4><p>Healthcare, pharmaceutical, and biotechnology companies.</p></div>
+          <div className="v2-industry"><img className="v2-industry-img" src={industrySecurity} alt="Security team collaborating at workstations" /><h4>Security &amp; Cybersecurity</h4><p>Companies delivering security and cybersecurity products and services.</p></div>
+          <div className="v2-industry"><img className="v2-industry-img" src={industryManufacturing} alt="Engineers reviewing technical data on a factory floor" /><h4>Manufacturing &amp; Industrial</h4><p>Manufacturing and industrial businesses.</p></div>
         </div>
       </div></section>
       <section id="engagement-models"><div className="container"><div className="v2-section-head"><div><h2>The right level<br/>of partnership.</h2><p className="v2-engagement-note">Retained search and RMS include a named recruiter, reserved capacity, and direct founder involvement.</p></div></div><div className="v2-models">{models.map((m)=><article className={m.featured?"v2-model featured":"v2-model"} key={m.name}><p className="eyebrow">{m.tag}</p><h3>{m.name}</h3><p>{m.body}</p><p className="v2-model-details">{m.details}</p><div className="v2-fit"><strong>Best for</strong><p>{m.fit}</p></div><a href={`mailto:c@myrighthire.com?subject=${encodeURIComponent("Discuss " + m.name)}`}>Talk about this model <span aria-hidden="true">↗</span></a></article>)}</div></div></section>
