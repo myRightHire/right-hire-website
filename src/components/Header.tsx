@@ -2,6 +2,7 @@ import { useState } from "react";
 import logoImage from "../imports/right-hire-logo-transparent.png";
 
 const navItems = [
+  { href: "/#our-focus", label: "Our Focus" },
   { href: "/#engagement-models", label: "Engagement Models" },
   { href: "/#difference", label: "Why Right Hire" },
   { href: "/#about", label: "About" },

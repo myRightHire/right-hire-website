@@ -4,7 +4,7 @@ export default function Footer() {
       <div className="container footer-shell">
         <div>
           <strong>Right Hire</strong>
-          <p>Recruiting for technology and manufacturing</p>
+          <p>Engineering and post-sales recruiting.</p>
         </div>
 
         <div className="footer-links">
