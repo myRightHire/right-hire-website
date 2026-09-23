@@ -17,9 +17,10 @@ export default function App() {
   return <div className="site-shell rh-v2" id="top">
     <Header />
     <main id="main-content">
-      <section className="v2-hero" style={{position:'relative'}}><div className="v2-bg-decoration" style={{backgroundImage:`url(${bgDecoration})`}} aria-hidden="true" /><div className="container" style={{position:'relative',zIndex:1}}>
+      <section className="v2-hero" style={{position:'relative'}}><div className="v2-bg-decoration" style={{backgroundImage:`url(${bgDecoration})`}} aria-hidden="true" /><div className="container" style={{position:'relative',zIndex:2}}>
         <h1>Specialized recruiting for<br/><span style={{whiteSpace:'nowrap'}}>engineering and post-sales.</span></h1>
-        <p className="v2-lede">Connecting you with the right talent through dedicated attention and clear ownership of your search. Deliberately small, so we stay close to the work.</p>
+        <p className="v2-lede">Connecting you with the right talent through dedicated attention and clear ownership of your search.</p>
+        <p className="v2-lede-small">Deliberately small, so we stay close to the work.</p>
         <a className="button button-primary" href={contact}>Discuss a search <span aria-hidden="true">↗</span></a>
       </div></section>
       <section className="v2-proof" aria-labelledby="proof-title"><div className="container"><h2 className="v2-proof-heading" id="proof-title">Results from a recent technology client engagement</h2><p className="v2-proof-context">Delivered under real deadline pressure for a technology client scaling critical post-sale and service capacity.</p><div className="v2-metrics">
