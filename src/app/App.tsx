@@ -18,7 +18,7 @@ export default function App() {
     <main id="main-content">
       <section className="v2-hero" style={{position:'relative'}}><div className="v2-bg-decoration" style={{backgroundImage:`url(${bgDecoration})`}} aria-hidden="true" /><div className="container" style={{position:'relative',zIndex:1}}>
         <h1>Specialized recruiting for engineering and post-sales.</h1>
-        <p className="v2-lede">Dedicated attention and clear ownership of your search. Deliberately small, so we stay close to the work.</p>
+        <p className="v2-lede">We offer dedicated attention and clear ownership of your search. Deliberately small, so we stay close to the work.</p>
         <a className="button button-primary" href={contact}>Discuss a search <span aria-hidden="true">↗</span></a>
       </div></section>
       <section id="our-focus" className="v2-expertise"><div className="container">
