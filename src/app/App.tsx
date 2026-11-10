@@ -6,7 +6,7 @@ import bgDecoration from "../assets/Vwi3G.jpg";
 import industryHealthcare from "../assets/industry-healthcare-microscope.jpg";
 import industrySecurity from "../assets/industry-security-vpn.jpg";
 import industryManufacturing from "../assets/industry-manufacturing-robots.jpg";
-import { Handshake, Cpu, LifeBuoy, Target, Search, ClipboardCheck, BadgeCheck } from "lucide-react";
+import { Cpu, LifeBuoy, Target, Search, ClipboardCheck, BadgeCheck } from "lucide-react";
 type PolicyType = "privacy" | "terms";
 const contact = "mailto:c@myrighthire.com?subject=Discuss%20a%20search";
 const models = [
@@ -26,19 +26,43 @@ export default function App() {
         <p className="v2-lede-small">Deliberately small, so we stay close to the work.</p>
         <a className="button button-primary" href={contact}>Discuss a search <span aria-hidden="true">↗</span></a>
       </div></section>
-      <section className="v2-proof" aria-labelledby="proof-title"><div className="container"><h2 className="v2-proof-heading" id="proof-title">Results from a recent technology client engagement</h2><p className="v2-proof-context">Delivered under real deadline pressure for a technology client scaling critical post-sale and service capacity.</p><div className="v2-metrics">
-        <div>
-          <Handshake className="v2-metric-icon" aria-hidden="true" strokeWidth={1.8} />
-          <strong>20</strong><h3>Accepted Offers</h3><p>Ahead of a four-month deadline</p>
-        </div>
-        <div>
-          <svg className="v2-metric-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><polyline points="12 7 12 12 15.5 14"/></svg>
-          <strong>29</strong><h3>business days</h3><p>Average requisition-to-acceptance</p>
-        </div>
-        <div>
-          <svg className="v2-metric-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
-          <strong>70<span>%</span></strong><h3>of presented candidates</h3><p>Progressed to interviews</p>
-        </div>
+      <section className="v2-proof" aria-labelledby="proof-title"><div className="container"><h2 className="v2-proof-heading" id="proof-title">Recent engagements.</h2><p className="v2-proof-context">A sample of recent work and outcomes.</p><div className="v2-placements">
+        <article className="v2-placement-card">
+          <p className="eyebrow">Technology · Post-Sales</p>
+          <p className="v2-placement-context">Scaled critical post-sales and service capacity ahead of a four-month client deadline.</p>
+          <div className="v2-placement-stats">
+            <div><strong>20</strong><span>accepted offers</span></div>
+            <div><strong>29</strong><span>avg. business days to acceptance</span></div>
+            <div><strong>70<small>%</small></strong><span>of candidates advanced to interviews</span></div>
+          </div>
+        </article>
+        <article className="v2-placement-card">
+          <p className="eyebrow">Security &amp; Cybersecurity</p>
+          <p className="v2-placement-context">IT and security hiring ramp for a global technology company — 20 hires completed across a 13-week engagement.</p>
+          <div className="v2-placement-stats">
+            <div><strong>20</strong><span>hires completed</span></div>
+            <div><strong>48</strong><span>avg. days to fill</span></div>
+            <div><strong>61<small>%</small></strong><span>of submits advanced to interview</span></div>
+          </div>
+        </article>
+        <article className="v2-placement-card">
+          <p className="eyebrow">Technology · Data &amp; Analytics</p>
+          <p className="v2-placement-context">Role had been open for months with no traction. First prescreened candidate delivered to the hiring manager in 5 days.</p>
+          <div className="v2-placement-stats">
+            <div><strong>5</strong><span>days to first prescreened candidate</span></div>
+            <div><strong>3</strong><span>strong candidates presented</span></div>
+            <div><strong>56</strong><span>days from job order to close</span></div>
+          </div>
+        </article>
+        <article className="v2-placement-card">
+          <p className="eyebrow">Manufacturing &amp; Industrial</p>
+          <p className="v2-placement-context">Leadership and functional placements across a high-growth manufacturing business — from the plant floor to the C-suite.</p>
+          <div className="v2-placement-stats">
+            <div><strong>6</strong><span>placements completed</span></div>
+            <div><strong>6</strong><span>distinct functions filled</span></div>
+            <div><strong style={{fontSize:'28px',lineHeight:'1.2'}}>C-suite<br/>to manager</strong><span>seniority range</span></div>
+          </div>
+        </article>
       </div></div></section>
       <section id="our-focus" className="v2-expertise"><div className="container">
         <h2>Focused expertise.<br/>Across the industries we serve.</h2>
